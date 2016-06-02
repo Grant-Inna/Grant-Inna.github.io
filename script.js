@@ -1,19 +1,23 @@
-//Функция для отлова и увода мыши с нужных нам элементов.
-//Для наглядности это три блока div
+//Р¤СѓРЅРєС†РёСЏ РґР»СЏ РѕС‚Р»РѕРІР° Рё СѓРІРѕРґР° РјС‹С€Рё СЃ РЅСѓР¶РЅС‹С… РЅР°Рј СЌР»РµРјРµРЅС‚РѕРІ.
+//Р”Р»СЏ РЅР°РіР»СЏРґРЅРѕСЃС‚Рё СЌС‚Рѕ С‚СЂРё Р±Р»РѕРєР° div
+
 
 function showBack() {
     document.body.onmouseover = document.body.onmouseout = handler;
 
     function handler(event) {
-        var ev = (event||window.event); //Для IE добавляем "window.event"
+        var ev = (event||window.event); //Р”Р»СЏ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚Рё СЃ IE РґРѕР±Р°РІР»СЏРµРј "window.event"
         var elem = ev.target.className;
-        if (elem == "flip") {
+        if (elem == "image") {
             if (ev.type == 'mouseover') {
-                ev.target.style.background = 'lightgreen'
+                ev.target.nextElementSibling.classList.add('visible');
+                ev.target.style.display = 'none';
             }
             if (ev.type == 'mouseout') {
-                ev.target.style.background = 'white'
+                ev.target.nextElementSibling.classList.remove('visible');
+                ev.target.style.display = 'block';
             }
         }
     }
 }
+
