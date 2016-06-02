@@ -59,6 +59,10 @@ body {
 	width: 100%;
 	position: absolute;
 	border: 1px solid transparent;
+	-moz-border-radius: 50%; /* Firefox */
+	-webkit-border-radius: 50%; /* Safari, Chrome */
+	-khtml-border-radius: 50%; /* KHTML */
+	behavior: url(border-radius.htc); /* учим IE border-radius */
 	border-radius: 50%;
 	text-align: center;
 }
