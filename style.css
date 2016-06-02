@@ -5,34 +5,70 @@ body {
 
 .container {
 	float: left;
-	height: 150px;
-	perspective: 600;
+	height: 100px;
+	width: 100px;
+
+	-webkit-perspective: 600px; /* webkit */
+	-moz-perspective: 600px; /* mozilla */
+	-ms-perspective: 600px; /* IE 10 */
+	-o-perspective: 600px; /* opera */
+	perspective: 600px; /* св-во по стандартам */
+
 	position: relative;
-	width: 150px;
 	margin: 10px;
 }
+
 .panel {
-	height: 100%;
+	height: 100px;
+	width: 100px;
 	position: absolute;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	transition: all 3s cubic-bezier(0.11, 0.85, 0, 1.06);
-	width: 100%;
+
+	-webkit-transition: all 3s cubic-bezier(0.15, 1.71, 0.45, 0.75);
+	-moz-transition: all 3s cubic-bezier(0.15, 1.71, 0.45, 0.75);
+	-ms-transition: all 3s cubic-bezier(0.15, 1.71, 0.45, 0.75);
+	-o-transition: all 3s cubic-bezier(0.15, 1.71, 0.45, 0.75);
+	transition: all 3s cubic-bezier(0.15, 1.71, 0.45, 0.75);
 
 }
+
 .panel:hover {
-	transform: rotateY(180deg);
+	-webkit-transform: rotateY( 180deg );
+	-moz-transform: rotateY( 180deg );
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY( 180deg );
+	transform: rotateY( 180deg );
 }
+
 .panel .side {
 	background-color:lightgreen;
+	background-position: center;
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
 	backface-visibility: hidden;
+
 	height: 100%;
-	position: absolute;
 	width: 100%;
+	position: absolute;
 	border: 1px solid transparent;
 	border-radius: 50%;
 	text-align: center;
 }
+
 .panel .back {
 	background-color: lightgrey;
-	transform: rotateY(180deg);
+
+	-webkit-transform: rotateY( 180deg );
+	-moz-transform: rotateY( 180deg );
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY( 180deg );
+	transform: rotateY( 180deg );
 }
