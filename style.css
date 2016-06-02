@@ -29,11 +29,11 @@ body {
 	-o-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 
-	-webkit-transition: all 3s cubic-bezier(0.15, 1.71, 0.45, 0.75);
-	-moz-transition: all 3s cubic-bezier(0.15, 1.71, 0.45, 0.75);
-	-ms-transition: all 3s cubic-bezier(0.15, 1.71, 0.45, 0.75);
-	-o-transition: all 3s cubic-bezier(0.15, 1.71, 0.45, 0.75);
-	transition: all 3s cubic-bezier(0.15, 1.71, 0.45, 0.75);
+	-webkit-transition: all 3s cubic-bezier(0.14, 1.29, 0.05, 0.86);
+	-moz-transition: all 3s cubic-bezier(0.14, 1.29, 0.05, 0.86);
+	-ms-transition: all 3s cubic-bezier(0.14, 1.29, 0.05, 0.86);
+	-o-transition: all 3s cubic-bezier(0.14, 1.29, 0.05, 0.86);
+	transition: all 3s cubic-bezier(0.14, 1.29, 0.05, 0.86);
 
 }
 
