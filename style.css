@@ -1,4 +1,4 @@
-body {
+﻿body {
 	margin: 0;
 	box-sizing: border-box;
 }
@@ -7,13 +7,6 @@ body {
 	float: left;
 	height: 100px;
 	width: 100px;
-
-	-webkit-perspective: 600px; /* webkit */
-	-moz-perspective: 600px; /* mozilla */
-	-ms-perspective: 600px; /* IE 10 */
-	-o-perspective: 600px; /* opera */
-	perspective: 600px; /* св-во по стандартам */
-
 	position: relative;
 	margin: 10px;
 }
@@ -22,56 +15,28 @@ body {
 	height: 100px;
 	width: 100px;
 	position: absolute;
-
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-
-	-webkit-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-	-moz-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-	-ms-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-	-o-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-	transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-
 }
 
-.panel:hover {
-	-webkit-transform: rotateY( 180deg );
-	-moz-transform: rotateY( 180deg );
-	-ms-transform: rotateY(180deg);
-	-o-transform: rotateY( 180deg );
-	transform: rotateY( 180deg );
-}
 
-.panel .side {
+.side {
 	background-color:lightgreen;
 	background-position: center;
-
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	backface-visibility: hidden;
-
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	border: 1px solid transparent;
 	border-radius: 50%;
-	-moz-border-radius: 50%; /* Firefox */
-	-webkit-border-radius: 50%; /* Safari, Chrome */
-	-khtml-border-radius: 50%; /* KHTML */
 	text-align: center;
 }
 
-.panel .back {
+.back {
 	background-color: lightgrey;
-
-	-webkit-transform: rotateY( 180deg );
-	-moz-transform: rotateY( 180deg );
-	-ms-transform: rotateY(180deg);
-	-o-transform: rotateY( 180deg );
-	transform: rotateY( 180deg );
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	display: none;
+	text-align: center;
 }
+
