@@ -1,6 +1,7 @@
-body {
+﻿body {
 	margin: 0;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 
 .container {
@@ -8,10 +9,10 @@ body {
 	height: 100px;
 	width: 100px;
 
-	-webkit-perspective: 600px; /* webkit */
-	-moz-perspective: 600px; /* mozilla */
-	-ms-perspective: 600px; /* IE 10 */
-	-o-perspective: 600px; /* opera */
+	-webkit-perspective: 600px; /* Safari, Chrome */
+	-khtml-perspective: 600px; /* KHTML */
+	-moz-perspective: 600px; /* Firefox */
+	-o-perspective: 600px; /* Opera */
 	perspective: 600px; /* св-во по стандартам */
 
 	position: relative;
@@ -24,47 +25,49 @@ body {
 	position: absolute;
 
 	-webkit-transform-style: preserve-3d;
+	-khtml-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
 	-o-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 
 	-webkit-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
+	-khtml-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
 	-moz-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-	-ms-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
 	-o-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
 	transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-
 }
 
 .panel:hover {
 	-webkit-transform: rotateY( 180deg );
+	-khtml-transform: rotateY( 180deg );
 	-moz-transform: rotateY( 180deg );
-	-ms-transform: rotateY(180deg);
 	-o-transform: rotateY( 180deg );
 	transform: rotateY( 180deg );
 
 }
 
-.side {
-	background-color:lightgreen;
-	background-position: center;
-
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	backface-visibility: hidden;
-
+.side,
+.back {
 	height: 100%;
 	width: 100%;
-	position: absolute;
 	border: 1px solid transparent;
 	border-radius: 50%;
-	-moz-border-radius: 50%; /* Firefox */
-	-webkit-border-radius: 50%; /* Safari, Chrome */
-	-khtml-border-radius: 50%; /* KHTML */
+	-webkit-border-radius: 50%;
+	-khtml-border-radius: 50%;
+	-moz-border-radius: 50%;
 	text-align: center;
+
+	-webkit-backface-visibility: hidden;
+	-khtml-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+.side {
+	background: lightgreen center;
+	position: absolute;
 }
 
 .back  {
@@ -72,58 +75,7 @@ body {
 
 	-webkit-transform: rotateY( 180deg );
 	-moz-transform: rotateY( 180deg );
-	-ms-transform: rotateY(180deg);
 	-o-transform: rotateY( 180deg );
 	transform: rotateY( 180deg );
-}
-
-
-/*CSS для только для IE9 - IE10*/
-@media screen and (min-width:0\0) {
-	body {
-		margin: 0;
-		box-sizing: border-box;
-	}
-
-	.container {
-		float: left;
-		height: 100px;
-		width: 100px;
-		position: relative;
-		margin: 10px;
-	}
-
-	.panel {
-		height: 100px;
-		width: 100px;
-		position: absolute;
-	}
-
-
-	.side {
-		background-color:lightgreen;
-		background-position: center;
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		border: 1px solid transparent;
-		border-radius: 50%;
-		text-align: center;
-	}
-
-	.back {
-		background-color: lightgrey;
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		border: 1px solid transparent;
-		border-radius: 50%;
-		display: none;
-		text-align: center;
-	}
-
-	p {
-		margin: 25px auto;
-	}
 }
 
