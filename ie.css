@@ -1,0 +1,59 @@
+﻿/*CSS конкретно для IE
+Обнуляем в обязательном порядке все эффекты переворота,
+для этого устанавливая значения по умалчанию
+*/
+@media screen and (min-width:0\0) {
+	.container {
+		float: left;
+		height: 100px;
+		width: 100px;
+		position: relative;
+		margin: 10px;
+		perspective: 0px !important;
+	;
+	}
+
+	.panel {
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		transform-style: flat !important;
+		transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
+	}
+
+	.panel:hover {
+		transform: none !important;
+	}
+
+
+
+	.side {
+		background-color: lightgreen;
+		background-position: center;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		border: 1px solid transparent;
+		border-radius: 50%;
+		text-align: center;
+		backface-visibility: visible !important;
+	}
+
+	.back {
+		background-color: lightgrey;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		border: 1px solid transparent;
+		border-radius: 50%;
+		display: none;
+		text-align: center;
+		transform: none !important;
+		-ms-transform: none;
+	}
+
+	p {
+		margin: 25px auto;
+	}
+}
+
