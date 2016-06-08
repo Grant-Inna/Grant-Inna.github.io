@@ -4,7 +4,18 @@
 	cursor: pointer;
 }
 
-.container {
+.panel,
+.side,
+.back {
+	-webkit-transform-style: preserve-3d;
+	-khtml-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+
+.panel {
 	float: left;
 	height: 100px;
 	width: 100px;
@@ -19,30 +30,20 @@
 	margin: 10px;
 }
 
-.panel {
-	height: 100px;
-	width: 100px;
-	position: absolute;
-
-	-webkit-transform-style: preserve-3d;
-	-khtml-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-
-	-webkit-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-	-khtml-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-	-moz-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-	-o-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-	transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
-}
-
 .panel:hover {
 	-webkit-transform: rotateY( 180deg );
 	-khtml-transform: rotateY( 180deg );
 	-moz-transform: rotateY( 180deg );
 	-o-transform: rotateY( 180deg );
 	transform: rotateY( 180deg );
+	.back {
+	z-index: 1;
+
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
 
 }
 
@@ -50,12 +51,21 @@
 .back {
 	height: 100%;
 	width: 100%;
+	position: absolute;
 	border: 1px solid transparent;
-	border-radius: 50%;
+
 	-webkit-border-radius: 50%;
 	-khtml-border-radius: 50%;
 	-moz-border-radius: 50%;
+	border-radius: 50%;
+
 	text-align: center;
+
+	-webkit-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
+	-khtml-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
+	-moz-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
+	-o-transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
+	transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
 
 	-webkit-backface-visibility: hidden;
 	-khtml-backface-visibility: hidden;
@@ -67,15 +77,20 @@
 
 .side {
 	background: lightgreen center;
-	position: absolute;
+	z-index: 1;
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
 }
 
 .back  {
 	background-color: lightgrey;
+	z-index: 0;
 
-	-webkit-transform: rotateY( 180deg );
-	-moz-transform: rotateY( 180deg );
-	-o-transform: rotateY( 180deg );
-	transform: rotateY( 180deg );
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
 }
 
