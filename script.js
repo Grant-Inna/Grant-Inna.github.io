@@ -1,5 +1,5 @@
 //При наведении мыши появляется скрытый блок информации
-//Через 0.5s переворачивается обратно
+//Через 0.3s после увода мыши переворачивается обратно
 
 function onHover() {
   //Выбираем передние блоки и навешиваем на них событие "onmouseenter"
@@ -20,11 +20,10 @@ function onHover() {
       };
     };
   }
-
-  if (1 - '\0') { //Отделили IE, чтобы сюда не попадали нормальный браузеры
-    //Выбираем все видимые элементы и навешиваем на них событие "onmouseenter"
-    var side = document.querySelectorAll('.side');
-    for (var i = 0; i < side.length; i++) {
+  //Для IE отдельное повеление
+  //Отделили IE, чтобы сюда не попадали нормальный браузеры
+  if (1 - '\0') {
+    for (i = 0; i < side.length; i++) {
       side[i].onmouseenter = function () {
         this.style.display = 'none';
         this.parentNode.children[1].style.display = 'block';
