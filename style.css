@@ -30,7 +30,7 @@
 	margin: 10px;
 }
 
-.panel:hover {
+/*.panel:hover {
 	-webkit-transform: rotateY( 180deg );
 	-khtml-transform: rotateY( 180deg );
 	-moz-transform: rotateY( 180deg );
@@ -44,8 +44,8 @@
 	-o-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 }
+}*/
 
-}
 
 .side,
 .back {
