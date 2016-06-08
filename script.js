@@ -20,6 +20,27 @@ function onHover() {
       };
     };
   }
+
+  if (1 - '\0') { //Отделили IE, чтобы сюда не попадали нормальный браузеры
+    //Выбираем все видимые элементы и навешиваем на них событие "onmouseenter"
+    var side = document.querySelectorAll('.side');
+    for (var i = 0; i < side.length; i++) {
+      side[i].onmouseenter = function () {
+        this.style.display = 'none';
+        this.parentNode.children[1].style.display = 'block';
+
+        //Так как событие "onmouseleave" на элементах не отлавливается,
+        //вешаем его на весь документ
+        var self = this.parentNode.children[1];
+        document.body.onmouseleave = function () {
+          setTimeout(function () {
+            self.parentNode.children[1].style.display = 'none';
+            self.parentNode.children[0].style.display = 'block';
+          }, 300)
+        };
+      }
+    }
+  }
 }
 
 
