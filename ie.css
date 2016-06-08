@@ -3,22 +3,14 @@
 для этого устанавливая значения по умалчанию
 */
 @media screen and (min-width:0\0) {
-	.container {
+	.panel {
 		float: left;
 		height: 100px;
 		width: 100px;
 		position: relative;
-		margin: 10px;
-		perspective: 0px !important;
-	;
-	}
-
-	.panel {
-		height: 100px;
-		width: 100px;
-		position: absolute;
+		margin: 10px 100px 10px 10px;
 		transform-style: flat !important;
-		transition: all 3s cubic-bezier(0.24, 1.82, 0, 0.9);
+		transition:  all 0.5s ease-out;
 	}
 
 	.panel:hover {
@@ -28,7 +20,6 @@
 
 
 	.side {
-		background-color: lightgreen;
 		background-position: center;
 		height: 100%;
 		width: 100%;
@@ -50,6 +41,11 @@
 		text-align: center;
 		transform: none !important;
 		-ms-transform: none;
+	}
+
+	img {
+		height: 100px;
+		width: 100px;
 	}
 
 	p {
