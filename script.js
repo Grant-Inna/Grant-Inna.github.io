@@ -14,7 +14,6 @@ function onHover() {
       var self = this.parentNode.children[1];
       document.body.onmouseleave = function () {
         setTimeout(function () {
-          console.log('Исчез: ' + self.className);
           self.style = ('z-index: 0;	transform: rotateY(-180deg)');
           self.parentNode.children[0].style = ('z-index: 1; transform: rotateY(0deg)');
         }, 300)
