@@ -1,5 +1,4 @@
 //При наведении мыши появляется скрытый блок информации
-//Через 0.3s после увода мыши переворачивается обратно
 
 function onHover() {
   //Выбираем передние блоки и навешиваем на них событие "onmouseenter"
@@ -16,7 +15,7 @@ function onHover() {
         setTimeout(function () {
           self.style = ('z-index: 0;	transform: rotateY(-180deg)');
           self.parentNode.children[0].style = ('z-index: 1; transform: rotateY(0deg)');
-        }, 300)
+        }, 100)
       };
     };
   }
@@ -35,7 +34,7 @@ function onHover() {
           setTimeout(function () {
             self.parentNode.children[1].style.display = 'none';
             self.parentNode.children[0].style.display = 'block';
-          }, 300)
+          }, 100)
         };
       }
     }
