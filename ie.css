@@ -3,44 +3,42 @@
 для этого устанавливая значения по умалчанию
 */
 @media screen and (min-width:0\0) {
-	.panel {
-		float: left;
-		height: 100px;
+	.panel:hover .back {
+		transform: rotateY(0deg);
+	}
+	.panel:hover .front {
+		transform: rotateY(180deg);
+	}
+
+	.panel, .front, .back {
 		width: 100px;
+		height: 100px;
+	}
+
+
+	.panel {
+		perspective: 500px;
+		transform-style: preserve-3d;
+		transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
 		position: relative;
-		margin: 10px 100px 10px 10px;
-		transform-style: flat !important;
-		transition:  all 0.5s ease-out;
 	}
 
-	.panel:hover {
-		transform: none !important;
-	}
+	.front, .back {
+		backface-visibility: hidden;
+		transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
+		transform-style: preserve-3d;
 
-
-
-	.side {
-		background-position: center;
-		height: 100%;
-		width: 100%;
 		position: absolute;
-		border: 1px solid transparent;
-		border-radius: 50%;
-		text-align: center;
-		backface-visibility: visible !important;
+
+	}
+
+	.front {
+		z-index: 2;
+		transform: rotateY(0deg);
 	}
 
 	.back {
-		background-color: lightgrey;
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		border: 1px solid transparent;
-		border-radius: 50%;
-		display: none;
-		text-align: center;
-		transform: none !important;
-		-ms-transform: none;
+		transform: rotateY(-180deg);
 	}
 
 	img {
