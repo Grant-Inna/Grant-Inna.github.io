@@ -1,105 +1,61 @@
 ﻿body {
-	margin: 0;
-	box-sizing: border-box;
-	cursor: pointer;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .panel,
 .side,
 .back {
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .panel {
-	float: left;
-	height: 100px;
-	width: 100px;
-	position: relative;
-	margin: 10px 100px 10px 10px;
-	-webkit-perspective: 600px;
-	-moz-perspective: 600px;
-	perspective: 600px;
+  float: left;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin: 10px 100px 10px 10px;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective: 600px;
 }
 
 img {
-height: 100px;
-width: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 img,
 .side,
 .back {
-border: 1px solid transparent;
--webkit-border-radius: 50%;
--khtml-border-radius: 50%;
--moz-border-radius: 50%;
-border-radius: 50%;
+  border: 1px solid transparent;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 
 }
 
-
-.back  {
-	background-color: lightgrey;
+.back {
+  background-color: lightgrey;
 
 }
 
 .side,
 .back {
-height: 100%;
-width: 100%;
-position: absolute;
-text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
 
--webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
-backface-visibility: hidden;
-}
+  -webkit-transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
+  -moz-transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
+  -o-transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
+  transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
 
-.one {
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 2s cubic-bezier(0.4, 0, 0, 1.74);
-
-}
-
-.two {
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 1s cubic-bezier(0.3, 1.16, 0.74, 1.13);
-
-}
-
-.three {
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 1s cubic-bezier(0.69, -0.4, 0.81, 1.49);
-
-}
-
-.four {
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s cubic-bezier(0.63, 0.63, 0.73, 1.35);
-
-}
-
-.five {
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s cubic-bezier(0.63, 0.63, 0.32, 1.51);
-
-}
-
-.six {
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
-
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
