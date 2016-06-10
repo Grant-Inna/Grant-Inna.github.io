@@ -92,7 +92,7 @@ backface-visibility: hidden;
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
-	transition: all 1s cubic-bezier(1, 0.04, 0, 1.01);
+	transition: all 0.5s cubic-bezier(0.63, 0.63, 0.32, 1.51);
 
 }
 
@@ -100,6 +100,6 @@ backface-visibility: hidden;
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
-	transition: all 0.9s cubic-bezier(0.26, -1.12, 0.7, 1.48);
+	transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
 
 }
