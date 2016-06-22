@@ -1,4 +1,4 @@
-﻿body {
+body {
   margin: 0;
   box-sizing: border-box;
   cursor: pointer;
@@ -13,46 +13,27 @@
 
 .panel {
   float: left;
-  height: 100px;
-  width: 100px;
+  height: 55px;
+  width: 80px;
   position: relative;
-  margin: 10px 100px 10px 10px;
-  transform: perspective(600px);
+  margin: 100px;
+/*  transform: perspective(600px);
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
-  perspective: 600px;
+  perspective: 600px;*/
 }
 
 .panel:hover .front {
-  transform: rotateY(180deg);
-  z-index: 0;
+  transform: rotateZ(180deg);
+
 }
 
 .panel:hover .back {
-  z-index: 1;
-  transform: rotateY(0deg)
-}
-
-img {
-  height: 100px;
-  width: 100px;
-}
-
-img,
-.front,
-.back {
-  border: 1px solid transparent;
-  -webkit-border-radius: 50%;
-  -khtml-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
 
 }
 
 .back {
-  background-color: lightgrey;
-  z-index: 0;
-  transform: rotateY(-180deg);
+ top: 28px;
 }
 
 .front {
@@ -71,8 +52,4 @@ img,
   -moz-transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
   -o-transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
   transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
-
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
