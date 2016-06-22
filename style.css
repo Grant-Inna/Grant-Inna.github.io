@@ -4,32 +4,16 @@ body {
   cursor: pointer;
 }
 
-.panel,
-.front,
-.back {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
 .panel {
   float: left;
-  height: 55px;
-  width: 80px;
+  height: 65px;
+  width: 72px;
   position: relative;
   margin: 100px;
-/*  transform: perspective(600px);
-  -webkit-perspective: 600px;
-  -moz-perspective: 600px;
-  perspective: 600px;*/
 }
 
 .panel:hover .front {
-  transform: rotateZ(360deg);
-
-}
-
-.panel:hover .back {
-
+  transform: rotateZ(180deg);
 }
 
 .back {
@@ -48,8 +32,11 @@ body {
   position: absolute;
   text-align: center;
 
-  -webkit-transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
+}
+
+.front {
+/*  -webkit-transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
   -moz-transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
-  -o-transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
-  transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);
+  -o-transition: all 0.5s cubic-bezier(0.63, 0.63, 0.54, 1.62);*/
+  transition: all 0.5s cubic-bezier(0.53,-0.49, 0.32, 1.28);
 }
