@@ -13,7 +13,7 @@ body {
 
 .smile {
   z-index: 1;
-  animation: round 1.5s infinite;
+  animation: round 2s infinite;
   animation-timing-function: cubic-bezier(0.6, -0.8, 0.51, 1.81);
   animation-direction: normal;
 
