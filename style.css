@@ -12,10 +12,16 @@ body {
 }
 
 .smile {
+  z-index: 1;
   animation: round 1.5s infinite;
   animation-timing-function: cubic-bezier(0.6, -0.8, 0.51, 1.81);
   animation-direction: normal;
-  z-index: 1;
+
+  /*For mobiles*/
+  -webkit-animation: round 1.5s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.6, -0.8, 0.51, 1.81);
+  -webkit-animation-direction: normal;
+
 }
 
 .eyes {
@@ -33,6 +39,48 @@ body {
 
 
 @keyframes round {
+  0% {
+    transform: rotateZ(0deg);
+    -moz-transform:  rotateZ(0deg);
+    -ms-transform:  rotateZ(0deg);
+    -webkit-transform:  rotateZ(0deg);
+    -o-transform:  rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(0deg);
+    -moz-transform:  rotateZ(0deg);
+    -ms-transform:  rotateZ(0deg);
+    -webkit-transform:  rotateZ(0deg);
+    -o-transform:  rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(180deg);
+    -moz-transform:  rotateZ(180deg);
+    -ms-transform:  rotateZ(180deg);
+    -webkit-transform:  rotateZ(180deg);
+    -o-transform:  rotateZ(180deg);
+  }
+
+  70% {
+    transform: rotateZ(180deg);
+    -moz-transform:  rotateZ(180deg);
+    -ms-transform:  rotateZ(180deg);
+    -webkit-transform:  rotateZ(180deg);
+    -o-transform:  rotateZ(180deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+    -moz-transform:  rotateZ(360deg);
+    -ms-transform:  rotateZ(360deg);
+    -webkit-transform:  rotateZ(360deg);
+    -o-transform:  rotateZ(360deg);
+  }
+}
+
+/*For mobiles*/
+@-webkit-keyframes round {
   0% {
     transform: rotateZ(0deg);
     -moz-transform:  rotateZ(0deg);
