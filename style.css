@@ -46,7 +46,7 @@ body {
     -webkit-transform:  rotateZ(0deg);
     -o-transform:  rotateZ(0deg);
   }
-  35% {
+  20% {
     transform: rotateZ(0deg);
     -moz-transform:  rotateZ(0deg);
     -ms-transform:  rotateZ(0deg);
@@ -54,7 +54,7 @@ body {
     -o-transform:  rotateZ(0deg);
   }
 
-  55% {
+  50% {
     transform: rotateZ(180deg);
     -moz-transform:  rotateZ(180deg);
     -ms-transform:  rotateZ(180deg);
