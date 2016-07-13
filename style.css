@@ -4,13 +4,13 @@ body {
 }
 
 .static {
-  height: 600px;
+  height: 800px;
 }
 
 .photo {
   background-image: url("./photo.jpg");
   background-size: cover;
-
+  background-position: bottom;
   height: 100%;
   width: 100%;
   animation: breathe 30s infinite;
