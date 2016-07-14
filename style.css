@@ -35,11 +35,11 @@ body {
   }
 
   50% {
-    transform: scale(1.04);
-    -moz-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -webkit-transform: scale(1.04);
-    -o-transform: scale(1.04);
+    transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -o-transform: scale(1.08);
   }
 
   100% {
@@ -62,11 +62,11 @@ body {
   }
 
   50% {
-    transform: scale(1.04);
-    -moz-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -webkit-transform: scale(1.04);
-    -o-transform: scale(1.04);
+    transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -o-transform: scale(1.08);
   }
 
   100% {
