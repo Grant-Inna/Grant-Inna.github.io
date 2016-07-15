@@ -77,3 +77,9 @@ body {
     -o-transform: scale(1);
   }
 }
+
+@media screen and (min-width:0\0) {
+  .photo {
+    animation: none !important;
+  }
+}
