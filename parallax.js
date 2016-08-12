@@ -16,6 +16,10 @@
   var updatePosition = function() {
     var translateValue = lastScrollY / speedDivider; // ќсновна€ переменна€
 
+    // ѕараллакс при отрицательном скролле нам не нужен
+    if (translateValue < 0)
+      translateValue = 0;
+
     translateY(promoPhoto, translateValue);
 
     // ќбработали движение и прерываем работу, помеча€ переменную как false
