@@ -17,8 +17,8 @@
     var translateValue = lastScrollY / speedDivider; // ќсновна€ переменна€
 
     // Ёффекты при отрицательном скролле нам не нужен
-    if (lastScrollY < 0) {
-      lastScrollY = 0;
+    if (window.pageYOffset < 0) {
+      window.pageYOffset = 0;
     }
 
     translateY(promoPhoto, translateValue);
