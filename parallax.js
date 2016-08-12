@@ -16,9 +16,9 @@
   var updatePosition = function() {
     var translateValue = lastScrollY / speedDivider; // ќсновна€ переменна€
 
-    // Ёффекты при отрицательном скролле нам не нужен
-    if (window.pageYOffset < 0) {
-      window.pageYOffset = 0;
+    // ѕараллакс при отрицательном скролле нам не нужен
+    if (translateValue < 0) {
+      translateValue = 0;
     }
 
     translateY(promoPhoto, translateValue);
