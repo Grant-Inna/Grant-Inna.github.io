@@ -13,9 +13,6 @@ html, body {
 }
 .promoPhoto {
 	background: url(./photo.jpg) no-repeat 50% 60%;
-/* 	transform-origin: 100% 50%; */
-	/*For mobiles*/
-/* 	-webkit-transform-origin: 100% 50%; */
 }
 
 .promoPhotoUnderLayer {
@@ -37,69 +34,68 @@ html, body {
   -webkit-transform:  scale(1.05);
   transform:  scale(1.05);
   background-size: cover;
-}
 	
-/*  animation: breathe 30s infinite;
+  animation: breathe 30s infinite;
   transform-origin: 70% 50%;
-  animation-timing-function: ease-in-out; */
+  animation-timing-function: ease-in-out;
 
   /*For mobiles*/
-/*   -webkit-animation: breathe 30s infinite;
+  -webkit-animation: breathe 30s infinite;
   -webkit-transform-origin: 70% 50%;
   -webkit-animation-timing-function: ease-in-out;
   
-} */
+}
 
 @keyframes breathe {
   0% {
-    transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
   }
 
   50% {
-    transform: scale(1.08);
-    -moz-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    -webkit-transform: scale(1.08);
-    -o-transform: scale(1.08);
-  }
-
-  100% {
     transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     -o-transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
   }
 }
 
 /*For mobiles*/
 @-webkit-keyframes breathe {
   0% {
-    transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    -o-transform: scale(1);
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
   }
 
   50% {
-    transform: scale(1.08);
-    -moz-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    -webkit-transform: scale(1.08);
-    -o-transform: scale(1.08);
-  }
-
-  100% {
     transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
     -o-transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
   }
 }
 
