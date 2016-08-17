@@ -2,8 +2,8 @@
   // Выбираем нужные для эффекта элементы, определяем переменные
   var lastScrollY = 0, // Изначально скролл равен 0
     isScroll = false, // Наличие скролла помечаем как false
-    promoPhoto = document.getElementsByClassName('promoPhoto'),
-    underLayer = document.getElementsByClassName('promoPhotoUnderLayer'),
+    promoPhoto = document.getElementById('promoPhoto'),
+    underLayer = document.getElementById('promoPhotoUnderLayer'),
     cssScale = 1.05,
     opacityDelay = 0.2, // Задержка непрозрачности
   // Драйвера для преобразование размера скролла
@@ -21,22 +21,22 @@
       translateValue = 0;
     }
 
-    cancelAnimation(promoPhoto);
-    cancelAnimation(underLayer);
+/*    cancelAnimation(promoPhoto);
+    cancelAnimation(underLayer);*/
     translateY(promoPhoto, translateValue);
 
     // Обработали движение и прерываем работу, помечая переменную как false
     isScroll = false;
   };
 
-  var cancelAnimation = function(elm) {
+/*  var cancelAnimation = function(elm) {
     var animation = 'none !important';
     elm.style['-webkit-animation'] = animation;
     elm.style['-moz-animation'] = animation;
     elm.style['-ms-animation'] = animation;
     elm.style['-o-animation'] = animation;
     elm.style.animation = animation;
-  };
+  };*/
 
   // Функция, включающая в себя обновление масштаба, отдаление по оси Y, а так же меру прозрачности
   var translateY = function(elm, value) {
