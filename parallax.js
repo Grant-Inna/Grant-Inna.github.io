@@ -1,33 +1,44 @@
 (function() {
-  // Выбираем нужные для эффекта элементы, определяем переменные
-  var lastScrollY = 0, // Изначально скролл равен 0
-    isScroll = false, // Наличие скролла помечаем как false
-    promoPhoto = document.getElementById('promoPhoto'),
-    underLayer = document.getElementById('underLayer'),
+  // Р’С‹Р±РёСЂР°РµРј РЅСѓР¶РЅС‹Рµ РґР»СЏ СЌС„С„РµРєС‚Р° СЌР»РµРјРµРЅС‚С‹, РѕРїСЂРµРґРµР»СЏРµРј РїРµСЂРµРјРµРЅРЅС‹Рµ
+  var lastScrollY = 0, // РР·РЅР°С‡Р°Р»СЊРЅРѕ СЃРєСЂРѕР»Р» СЂР°РІРµРЅ 0
+    isScroll = false, // РќР°Р»РёС‡РёРµ СЃРєСЂРѕР»Р»Р° РїРѕРјРµС‡Р°РµРј РєР°Рє false
+    promoPhoto = document.getElementsByClassName('promoPhoto'),
+    underLayer = document.getElementsByClassName('promoPhotoUnderLayer'),
     cssScale = 1.05,
-    opacityDelay = 0.2, // Задержка непрозрачности
-  // Драйвера для преобразование размера скролла
-  // в приемлимую величину
+    opacityDelay = 0.2, // Р—Р°РґРµСЂР¶РєР° РЅРµРїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё
+  // Р”СЂР°Р№РІРµСЂР° РґР»СЏ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ СЂР°Р·РјРµСЂР° СЃРєСЂРѕР»Р»Р°
+  // РІ РїСЂРёРµРјР»РёРјСѓСЋ РІРµР»РёС‡РёРЅСѓ
     opacityDriver = 270,
     speedDivider = 2,
     scaleDriver = 1000;
 
-  // Обновляем положение элементов
+  // РћР±РЅРѕРІР»СЏРµРј РїРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ
   var updatePosition = function() {
-    var translateValue = lastScrollY / speedDivider; // Основная переменная
+    var translateValue = lastScrollY / speedDivider; // РћСЃРЅРѕРІРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ
 
-    // Параллакс при отрицательном скролле нам не нужен
+    // РџР°СЂР°Р»Р»Р°РєСЃ РїСЂРё РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРј СЃРєСЂРѕР»Р»Рµ РЅР°Рј РЅРµ РЅСѓР¶РµРЅ
     if (translateValue < 0) {
       translateValue = 0;
     }
 
+    cancelAnimation(promoPhoto);
+    cancelAnimation(underLayer);
     translateY(promoPhoto, translateValue);
 
-    // Обработали движение и прерываем работу, помечая переменную как false
+    // РћР±СЂР°Р±РѕС‚Р°Р»Рё РґРІРёР¶РµРЅРёРµ Рё РїСЂРµСЂС‹РІР°РµРј СЂР°Р±РѕС‚Сѓ, РїРѕРјРµС‡Р°СЏ РїРµСЂРµРјРµРЅРЅСѓСЋ РєР°Рє false
     isScroll = false;
   };
 
-  // Функция, включающая в себя обновление масштаба, отдаление по оси Y, а так же меру прозрачности
+  var cancelAnimation = function(elm) {
+    var animation = 'none !important';
+    elm.style['-webkit-animation'] = animation;
+    elm.style['-moz-animation'] = animation;
+    elm.style['-ms-animation'] = animation;
+    elm.style['-o-animation'] = animation;
+    elm.style.animation = animation;
+  };
+
+  // Р¤СѓРЅРєС†РёСЏ, РІРєР»СЋС‡Р°СЋС‰Р°СЏ РІ СЃРµР±СЏ РѕР±РЅРѕРІР»РµРЅРёРµ РјР°СЃС€С‚Р°Р±Р°, РѕС‚РґР°Р»РµРЅРёРµ РїРѕ РѕСЃРё Y, Р° С‚Р°Рє Р¶Рµ РјРµСЂСѓ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё
   var translateY = function(elm, value) {
     var scaleV = cssScale - (value / scaleDriver);
     if (scaleV > 1) {
@@ -54,7 +65,7 @@
     }
   };
 
-  // Убеждаемся, то событие произошло, если так, то обрабатываем движение
+  // РЈР±РµР¶РґР°РµРјСЃСЏ, С‚Рѕ СЃРѕР±С‹С‚РёРµ РїСЂРѕРёР·РѕС€Р»Рѕ, РµСЃР»Рё С‚Р°Рє, С‚Рѕ РѕР±СЂР°Р±Р°С‚С‹РІР°РµРј РґРІРёР¶РµРЅРёРµ
   var requestTick = function() {
     if (!isScroll) {
       window.requestAnimationFrame(updatePosition);
@@ -62,14 +73,14 @@
     }
   };
 
-  // Обновляем переменную прокрутки, вызываем функцию
-  // для подтверждения движения
+  // РћР±РЅРѕРІР»СЏРµРј РїРµСЂРµРјРµРЅРЅСѓСЋ РїСЂРѕРєСЂСѓС‚РєРё, РІС‹Р·С‹РІР°РµРј С„СѓРЅРєС†РёСЋ
+  // РґР»СЏ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ РґРІРёР¶РµРЅРёСЏ
   var doScroll = function() {
-    lastScrollY = window.pageYOffset; //window.pageYOffset не что иное, как размер скролла
+    lastScrollY = window.pageYOffset; //window.pageYOffset РЅРµ С‡С‚Рѕ РёРЅРѕРµ, РєР°Рє СЂР°Р·РјРµСЂ СЃРєСЂРѕР»Р»Р°
     requestTick();
   };
 
-  // Активация при загрузке элементов страницы
+  // РђРєС‚РёРІР°С†РёСЏ РїСЂРё Р·Р°РіСЂСѓР·РєРµ СЌР»РµРјРµРЅС‚РѕРІ СЃС‚СЂР°РЅРёС†С‹
   (function() {
     var loaded = 0;
     var bootstrap = function() {
@@ -79,7 +90,7 @@
       rafPolyfill();
       window.onscroll = doScroll;
     };
-    // Убеждаемся, что страница загрузилась
+    // РЈР±РµР¶РґР°РµРјСЃСЏ, С‡С‚Рѕ СЃС‚СЂР°РЅРёС†Р° Р·Р°РіСЂСѓР·РёР»Р°СЃСЊ
     if ( document.readyState === 'complete' ) {
       setTimeout( bootstrap );
     } else {
@@ -88,8 +99,8 @@
     }
   })();
 
-  // RequestAnimationFrame для старых (читай дурацких) браузеров
-  var rafPolyfill = function() { //Для IE!
+  // RequestAnimationFrame РґР»СЏ СЃС‚Р°СЂС‹С… (С‡РёС‚Р°Р№ РґСѓСЂР°С†РєРёС…) Р±СЂР°СѓР·РµСЂРѕРІ
+  var rafPolyfill = function() { //Р”Р»СЏ IE!
     var lastTime, vendors, x;
     lastTime = 0;
     vendors = ["webkit", "moz"];
