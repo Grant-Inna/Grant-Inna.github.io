@@ -3,11 +3,11 @@
   var lastScrollY = 0, // Изначально скролл равен 0
     isScroll = false, // Наличие скролла помечаем как false
     promoPhoto = document.getElementById('promoPhoto'),
-    underLayer = document.getElementById('promoPhotoUnderLayer'),
-    cssScale = 1.05,
+    underLayer = document.getElementById('underLayer'),
+    cssScale = 1.04,
     opacityDelay = 0.2, // Задержка непрозрачности
   // Драйвера для преобразование размера скролла
-  // в приемлимую величину
+  // в приемлимую или необходимую величину
     opacityDriver = 270,
     speedDivider = 2,
     scaleDriver = 1000;
@@ -21,22 +21,23 @@
       translateValue = 0;
     }
 
-/*    cancelAnimation(promoPhoto);
-    cancelAnimation(underLayer);*/
+    cancelAnimation(promoPhoto);
+    cancelAnimation(underLayer);
     translateY(promoPhoto, translateValue);
 
     // Обработали движение и прерываем работу, помечая переменную как false
     isScroll = false;
   };
 
-/*  var cancelAnimation = function(elm) {
-    var animation = 'none !important';
-    elm.style['-webkit-animation'] = animation;
-    elm.style['-moz-animation'] = animation;
-    elm.style['-ms-animation'] = animation;
-    elm.style['-o-animation'] = animation;
-    elm.style.animation = animation;
-  };*/
+  // Преодолеть конфликт удалось с помощью введения отдельного класса,
+  // который удаляется при достаточном скролле
+  var cancelAnimation = function(elm) {
+    if(lastScrollY > speedDivider) {
+      elm.classList.remove('animationStyle');
+    } else {
+      elm.classList.add('animationStyle');
+    }
+  };
 
   // Функция, включающая в себя обновление масштаба, отдаление по оси Y, а так же меру прозрачности
   var translateY = function(elm, value) {
