@@ -38,11 +38,11 @@ html, body {
 
 
 .animationStyle {
-  animation: breathe 30s infinite;
+  animation: breathe 25s infinite;
   animation-timing-function: ease-in-out;
 
   /*For mobiles*/
-  -webkit-animation: breathe 30s infinite;
+  -webkit-animation: breathe 25s infinite;
   -webkit-animation-timing-function: ease-in-out;
 }
 
