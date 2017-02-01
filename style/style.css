@@ -307,6 +307,18 @@ h2 {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .popular_travels img {
+    width: 240px;
+  }
+  h2 {
+    font-size: 37px;
+  }
+
+  
+}
+
+
 
 /*      БЛОК СОЗДАНИЯ МАРШРУТА     */
 .create_a_travel,
