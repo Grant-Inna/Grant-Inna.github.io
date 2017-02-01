@@ -307,15 +307,13 @@ h2 {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   .popular_travels img {
     width: 240px;
   }
   h2 {
     font-size: 37px;
   }
-
-  
 }
 
 
@@ -475,6 +473,25 @@ select {
   }
 }
 
+@media screen and (max-width: 425px){
+  .create_a_travel .container_3_elements > label {
+    font-size: 12px;
+  }
+
+  .create_a_travel .container_2_elements input[type="submit"] {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 335px){
+  .create_a_travel .container_3_elements > label {
+    font-size: 11px;
+  }
+
+  .create_a_travel .container_2_elements input[type="submit"] {
+    font-size: 19px;
+  }
+
+}
 
 
 
