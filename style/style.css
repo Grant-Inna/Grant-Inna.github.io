@@ -37,6 +37,8 @@ a {
 }
 .container {
   padding: 0 2.5%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 li {
   list-style: none;
@@ -60,7 +62,6 @@ header {
 .logo {
   background: url("../img/logo.png") no-repeat;
   height: 75px;
-  float: left;
   font: 600 38px 'Bebas Neue', sans-serif;
   color: #14616b;
   line-height: 75px;
@@ -199,6 +200,8 @@ h1 {
   margin: 65px 0 70px;
   text-align: center;
 }
+
+/* Media для верхнего блока */
 @media screen and (max-width: 1100px) {
   .search_a_travel .container_3_elements,
   .search_a_travel .container_2_elements {
@@ -209,16 +212,37 @@ h1 {
     float: none;
     width: 100%;
   }
-  .search_a_travel .container_3_elements div:nth-child(2) {
+  .search_a_travel .container_3_elements div:nth-child(2){
     margin: 0 2%;
   }
   .search_a_travel .container_2_elements div:first-child {
     margin-right: 2%;
   }
 }
+@media screen and (max-width: 650px) {
+  main .search_a_travel {
+    margin: 0 auto;
+  }
+  .search_a_travel .container_3_elements div:first-child,
+  .search_a_travel .container_3_elements div input{
+    width: 100%;
+  }
+  h1 {
+    font-size: 48px;
+    margin: 35px 0 0;
+  }
+  .search_a_travel .container_3_elements div:nth-child(2) {
+    margin-left: 0;
+  }
+  .search_a_travel .container_2_elements div:first-child {
+    margin-right: 0;
+  }
+}
+
+
+
 /*       БЛОК ПОПУЛЯРНЫХ МАРШРУТОВ      */
 
-/* При 160px ещё более–менее смотрится, на ширине экрана в 900px уже необходимо переносить строчки, ибо слипаются */
 
 h2 {
   font: 45px 'Bebas Neue', sans-serif;
@@ -287,8 +311,9 @@ h2 {
 /*      БЛОК СОЗДАНИЯ МАРШРУТА     */
 .create_a_travel,
 .search_a_travel {
-  margin: 50px auto 0;
+  margin: 50px auto;
 }
+
 
 /*          СТИЛИ ПОЛЕЙ ВВОДА         */
 
@@ -324,7 +349,6 @@ select {
 
 /*          ЛЕВЫЙ БЛОК         */
 
-/* Все блоки чувствуют себя нормально до размера экрана в 600px, далее необходим перенос */
 .container_3_elements {
   width: 510px;
   display: flex;
@@ -404,20 +428,50 @@ select {
   margin-top: 33px; }
 
 
-@media screen and (max-width: 1060px) {
-  .create_a_travel,
-  .search_a_travel {
-    width: 80%;
+/* Media для формы создания маршрута */
+
+@media screen and (max-width: 1100px) {
+  .create_a_travel {
+    width: 70%;
+  }
+
+  .create_a_travel .container_3_elements {
+    width: inherit;
+  }
+
+  .create_a_travel .container_3_elements input,
+  .create_a_travel .container_3_elements div {
+    width: 190px;
+  }
+
+  .create_a_travel .right_form_container {
+    float: none;
+    width: 100%;
+  }
+
+  .create_a_travel .container_2_elements * {
+    width: 290px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .create_a_travel .container_3_elements input,
+  .create_a_travel .container_3_elements div,
+  .create_a_travel .container_2_elements * {
+    width: 100%;
   }
 }
 
 
 
-/*       Footer      */
+
+
+
+  /*       Footer      */
 
 footer {
   background-color: #14616b;
-  margin-top: 50px;
 }
 footer .header {
   padding-top: 20px;
@@ -438,4 +492,16 @@ footer .copyright {
   text-align: center;
   text-transform: capitalize;
 }
-
+/* Media для footer */
+@media screen and (max-width: 600px) {
+  footer .left,
+  footer .right {
+    display: inline-block;
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+  footer .right>a:first-child {
+    margin-left: 0;
+  }
+}
