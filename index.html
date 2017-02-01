@@ -1,15 +1,16 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="style/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Padauk|Roboto+Condensed" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Padauk|Roboto+Condensed" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header class="container clearfix">
     <a href="/" class="logo blue">Free Travel</a>
-    <menu>
+    <nav class="general">
         <li>
             <a href="#" class="white">Лучшее за неделю</a>
         </li>
@@ -19,8 +20,19 @@
         <li>
             <a href="#" class="white">Вход/Регистрация</a>
         </li>
-    </menu>
+    </nav>
+    <nav class="mobile">
+        <input type="checkbox" id="showmenu" class="nav"/>
+        <label for="showmenu" class="showmenu">&#9776;</label>
+        <label for="showmenu" class="back"></label>
+        <ul>
+            <li><a href="#">Лучшее за неделю</a></li>
+            <li><a href="#">Топ 20</a></li>
+            <li><a href="#">Вход/Регистрация</a></li>
+        </ul>
+    </nav>
 </header>
+
 <main class="container">
     <h1>Хочу в путешествие</h1>
     <div class="search_a_travel clearfix">
