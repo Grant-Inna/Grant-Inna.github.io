@@ -1,19 +1,208 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Padauk|Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
+<header class="container clearfix">
+    <a href="/" class="logo blue">Free Travel</a>
+    <menu>
+        <li>
+            <a href="#" class="white">Лучшее за неделю</a>
+        </li>
+        <li>
+            <a href="#" class="white">Топ 20</a>
+        </li>
+        <li>
+            <a href="#" class="white">Вход/Регистрация</a>
+        </li>
+    </menu>
+</header>
+<main class="container">
+    <h1>Хочу в путешествие</h1>
+    <div class="search_a_travel clearfix">
+        <form class="clearfix">
+            <div class="container_3_elements">
+                <div>
+                    <label for="search_a_travel_city">откуда</label>
+                    <input type="text" placeholder="Город" id="search_a_travel_city"> </div>
+                <div>
+                    <label for="search_a_travel_when-start">начало</label>
+                    <input type="date" placeholder="начало" id="search_a_travel_when-start"> </div>
+                <div>
+                    <label for="search_a_travel_when-finish">конец</label>
+                    <input type="date" placeholder="конец" id="search_a_travel_when-finish"> </div>
+               </div>
 
+            <!--  ПРАВАЯ КОЛОНКА -->
+            <div class="right_form_container">
+                <div class="container_2_elements">
+                    <div>
+                        <label for="search_a_travel_transport">на чём</label>
+                        <select id="search_a_travel_transport">
+                            <option value="" selected="selected">автомобиль</option>
+                            <option value="">велосипед</option>
+                            <option value="">пешком</option>
+                            <option value="">другое</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="search_a_travel_reason">зачем</label>
+                        <select id="search_a_travel_reason">
+                            <option value="" selected="selected">за впечатлениями</option>
+                            <option value="">за крутыми селфи</option>
+                            <option value="">за сокровищами</option>
+                            <option value="">за компанию</option>
+                            <option value="">другое</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <h2>популярные маршруты</h2>
+    <div class="popular_travels">
+        <section>
+            <a href=""><img src="./img/park.jpg" alt=""></a>
+            <h3>вологда</h3>
+            <p>01.02.2017 - 09.02.2017</p>
+            <p>Велосипед</p>
+            <p>Туризм</p>
+        </section>
+        <section>
+            <a href=""><img src="./img/park.jpg" alt=""></a>
+            <h3>вологда</h3>
+            <p>01.02.2017 - 09.02.2017</p>
+            <p>Велосипед</p>
+            <p>Туризм</p>
+        </section>
+        <section>
+            <a href="#"><img src="./img/park.jpg" alt=""></a>
+            <h3>вологда</h3>
+            <p>01.02.2017 - 09.02.2017</p>
+            <p>Велосипед</p>
+            <p>Туризм</p>
+        </section>
+        <section>
+            <a href="#"><img src="./img/park.jpg" alt=""></a>
+            <h3>вологда</h3>
+            <p>01.02.2017 - 09.02.2017</p>
+            <p>Велосипед</p>
+            <p>Туризм</p>
+        </section>
+        <section>
+            <a href="#"><img src="./img/park.jpg" alt=""></a>
+            <h3>вологда</h3>
+            <p>01.02.2017 - 09.02.2017</p>
+            <p>Велосипед</p>
+            <p>Туризм</p>
+        </section>
+        <section>
+            <a href="#"><img src="./img/park.jpg" alt=""></a>
+            <h3>вологда</h3>
+            <p>01.02.2017 - 09.02.2017</p>
+            <p>Велосипед</p>
+            <p>Туризм</p>
+        </section>
+        <section>
+            <a href="#"><img src="./img/park.jpg" alt=""></a>
+            <h3>вологда</h3>
+            <p>01.02.2017 - 09.02.2017</p>
+            <p>Велосипед</p>
+            <p>Туризм</p>
+        </section>
+        <section>
+            <a href=""><img src="./img/park.jpg" alt=""></a>
+            <h3>вологда</h3>
+            <p>01.02.2017 - 09.02.2017</p>
+            <p>Велосипед</p>
+            <p>Туризм</p>
+        </section>
+    </div>
+</main>
 
-<div class="static">
-  <div class="promoPhoto animationStyle" id="promoPhoto"></div>
-  <div class="promoPhotoUnderLayer animationStyle" id="underLayer"></div>
+<main class="container">
+
+<!--             БЛОК ДОБАВЛЕНИЯ ПУТЕШЕСТВИЯ             -->
+
+<h2>не нашли подходящего? предложите свой маршрут!</h2>
+<div class="create_a_travel clearfix">
+    <form>
+        <!-- ЛЕВАЯ КОЛОНКА -->
+
+        <div class="container_3_elements">
+            <div>
+                <label for="create_a_travel_city">откуда</label>
+                <input type="text" placeholder="Город" id="create_a_travel_city"> </div>
+            <div>
+                <label for="create_a_travel_when-start">начало</label>
+                <input type="date" placeholder="начало" id="create_a_travel_when-start"> </div>
+            <div>
+               <label for="create_a_travel_when-finish">конец</label>
+                <input type="date" placeholder="конец" id="create_a_travel_when-finish"> </div>
+            <label for="create_a_travel_description">Краткое описание маршрута</label>
+            <textarea id="create_a_travel_description" placeholder="Краткое описание маршрута"> </textarea>
+        </div>
+
+          <!--  ПРАВАЯ КОЛОНКА -->
+
+        <div class="right_form_container">
+        <div class="container_2_elements">
+            <div>
+                <label for="create_a_travel_transport">на чём</label>
+                <select id="create_a_travel_transport">
+                    <option value="" selected="selected">на своих двоих</option>
+                    <option value="">на велосипеде</option>
+                    <option value="">на машине</option>
+                    <option value="">другое</option>
+                </select>
+            </div>
+            <div>
+                <label for="create_a_travel_reason">зачем</label>
+                <select id="create_a_travel_reason">
+                    <option value="" selected="selected">за впечатлениями</option>
+                    <option value="">за крутыми селфи</option>
+                    <option value="">за сокровищами</option>
+                    <option value="">за компанию</option>
+                    <option value="">другое</option>
+                </select>
+            </div>
+        </div>
+        <div class="container_2_elements">
+            <div>
+                <label for="create_a_travel_foto">загрузить фото</label> <span>
+                <!--Тут без placeholder'a: либо надпись, либо кнопка-->
+            <input type="file" id="create_a_travel_foto">
+            </span>
+            </div>
+            <div>
+                <label for="create_a_travel_difficulty">сложность</label>
+                <input type="range" min="0" max="100" step="1" value="50" id="create_a_travel_difficulty"> </div>
+            <input type="submit" value="создать маршрут">
+        </div>
+        </div>
+    </form>
 </div>
 
+</main>
+<footer class="container">
+    <div class="header clearfix">
+        <div class="left">
+            <a href="/" class="logo white">Free Travel</a>
+        </div>
+        <div class="right">
+            <a href="#" class="white">пожаловаться</a>
+            <a href="#" class="white">контакты</a>
+            <a href="#" class="white">о нас</a>
+        </div>
+    </div>
+    <div class="copyright white">
+        &copy; SmartGeek 2017
+    </div>
+</footer>
 
-<script rel="script" type="text/javascript" src="parallax.js"></script>
 </body>
 </html>

@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+/* font-family: 'Bebas Neue'; */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebasneuebold.woff2') format('woff2'),
+  url('../fonts/bebasneuebold.woff') format('woff'),
+  url('../fonts/bebasneuebold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 	     General      */
+* {
+  box-sizing: border-box;
+  color: #1a91a1;
+  font: 400 11px "Open Sans Light", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: inherit; }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.container {
+  padding: 0 2.5%;
+}
+li {
+  list-style: none;
+}
+
+/* Colors */
+.white {
+  color: #ffffff;
+}
+.blue {
+  color: #1A91A1;
+}
+
+/*  darkblue: #14616b  */
+
+/*       Header       */
+header {
+  line-height: 75px;
+  margin: 25px 0;
+}
+.logo {
+  background: url("../img/logo.png") no-repeat;
+  height: 75px;
+  float: left;
+  font: 600 38px 'Bebas Neue', sans-serif;
+  color: #14616b;
+  line-height: 75px;
+  padding-left: 85px;
+}
+menu {
+  float: right;
+  margin-top: 30px;
+  text-align: right;
+}
+menu li {
+  display: inline-block;
+  text-align: right;
+}
+menu li a {
+  background-color: #14616b;
+  border-radius: 15px;
+  margin-left: 10px;
+  padding: 10px 25px;
+}
+
+/*       Main       */
+h1 {
+  font: 600 72px 'Bebas Neue', sans-serif;
+  color: #14616b;
+  margin: 65px 0 70px;
+  text-align: center;
+}
+
+/*       БЛОК ПОПУЛЯРНЫХ МАРШРУТОВ      */
+
+/* При 160px ещё более–менее смотрится, на ширине экрана в 900px уже необходимо переносить строчки, ибо слипаются */
+
+h2 {
+  font: 45px 'Bebas Neue', sans-serif;
+  color: #14616b;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  transform: scaleX(0.85);
+}
+.popular_travels {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.popular_travels section {
+  margin-bottom: 40px;
+}
+.popular_travels img {
+  width: 260px;
+  margin-bottom: 10px;
+}
+.popular_travels section h3 {
+  font: 700 15px "OpenSans Bold", sans-serif;
+  color: #14616b;
+}
+.popular_travels section p {
+  font: 400 15px "OpenSans Bold", sans-serif;
+}
+
+.popular_travels section {
+  margin: 0 auto 40px;
+}
+
+@media screen and (max-width: 1440px) {
+  .popular_travels {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .popular_travels img {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .popular_travels img {
+    width: 315px;
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+  .popular_travels img {
+    width: 350px;
+  }
+  .popular_travels {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+/*      БЛОК СОЗДАНИЯ МАРШРУТА     */
+.create_a_travel,
+.search_a_travel {
+  margin: 50px auto 0;
+}
+
+/*          СТИЛИ ПОЛЕЙ ВВОДА         */
+
+input,
+select {
+  outline: 0;
+}
+
+.create_a_travel label,
+.search_a_travel label {
+  font: 900 15px "Open Sans", sans-serif;
+  line-height: 50px;
+  margin: 0 0 0 20px;
+}
+
+::-webkit-input-placeholder {
+  color: #1a91a1 ;
+  font: 700 12px "Open Sans", sans-serif;
+}
+::-moz-placeholder {
+  color: #1a91a1 ;      /* Firefox 19+ */
+  font: 700 12px "Open Sans", sans-serif;
+}
+:-moz-placeholder {
+  color: #1a91a1 ;      /* Firefox 18- */
+  font: 700 12px "Open Sans", sans-serif;
+}
+:-ms-input-placeholder {
+  color: #1a91a1 ;
+  font: 700 12px "Open Sans", sans-serif;
+}
+
+
+/*          ЛЕВЫЙ БЛОК         */
+
+/* Все блоки чувствуют себя нормально до размера экрана в 600px, далее необходим перенос */
+.container_3_elements {
+  width: 510px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  float: left; }
+
+.container_3_elements div {
+  width: 155px; }
+
+.container_3_elements div input {
+  width: 155px;
+  border: 2px solid #14616b;
+  border-radius: 20px;
+  font: 900 11px "Open Sans", sans-serif;
+  line-height: 29px;
+  padding-left: 15px; }
+
+.container_3_elements textarea {
+  width: inherit;
+  height: 120px;
+  padding: 13px;
+  resize: none;
+  flex-basis: 100%;
+  order: 3;
+  border: 2px solid #14616b;
+  border-radius: 15px;
+  font: 700 11px "Open Sans", sans-serif; }
+
+/*          ПРАВЫЙ БЛОК         */
+
+.right_form_container {
+  width: 440px;
+  float: right; }
+
+.container_2_elements {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  float: right;}
+
+.container_2_elements div {
+  width: 205px; }
+
+.container_2_elements div select,
+.container_2_elements div input {
+  width: 205px;
+  height: 34px;
+  border: 2px solid #14616b;
+  border-radius: 20px;
+  font: 900 11px "Open Sans", sans-serif;
+  padding-left: 15px; }
+
+.container_2_elements span {
+  display: block;
+  width: 205px;
+  height: 33px;
+  border: 2px solid #14616b;
+  border-radius: 20px; }
+
+.container_2_elements input[type="file"] {
+  opacity: 0; }
+
+.container_2_elements input[type="submit"] {
+  color: #fff;
+  width: inherit;
+  height: 52px;
+  border-radius: 25px;
+  background-color: #14616b;
+  border: 2px solid #14616b;
+  font: 28px "Roboto Condensed", sans-serif;
+  text-align: center;
+  line-height: 52px;
+  margin-top: 33px; }
+
+
+@media screen and (max-width: 1060px) {
+  .create_a_travel,
+  .search_a_travel {
+    width: 80%;
+  }
+}
+
+
+
+/*       Footer      */
+
+footer {
+  background-color: #14616b;
+  margin-top: 50px;
+}
+footer .header {
+  padding-top: 20px;
+}
+footer .logo {
+  background: none;
+  color: #ffffff;
+  padding-left: 0;
+}
+footer .right>a {
+  font: 13px "Open Sans", sans-serif;
+  line-height: 75px;
+  margin-left: 60px;
+}
+footer .copyright {
+  font: 400 16px "Open Sans", sans-serif;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
