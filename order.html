@@ -573,7 +573,12 @@
         padding: 5px 0;
       } }
     @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-      /* iPhone 5 or iPod Touch 5th generation */
+      @media (orientation: landscape) {
+        html, body {
+          height: 320px;
+          position: fixed;
+        }
+      }
     }
 
     /* END OF CUSTOM STILES */
