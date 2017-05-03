@@ -574,7 +574,12 @@
       } }
     @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
       @media (orientation: landscape) {
-        html, body {
+        body {
+          display: flex;
+          align-items: center;
+        }
+        .wrapper {
+          height: 230px;
         }
       }
     }
