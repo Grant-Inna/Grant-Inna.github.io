@@ -260,7 +260,7 @@ a {
 }
 @media (max-width: 568px) and (orientation: landscape ) {
     .mainContainer {
-        background-position: center;
+        background-size: 100% 100%;
     }
     .header {
         width: 220px;
@@ -348,6 +348,6 @@ a {
         padding-top: .5%;
     }
     .info {
-        height: 40%;
+        height: 42%;
     }
 }
