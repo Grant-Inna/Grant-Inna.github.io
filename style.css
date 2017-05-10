@@ -59,8 +59,8 @@ body {
 }
 
 .header {
-    width: 365px;
-    height: 95px;
+    width: 100%;
+    height: 15%;
 
     margin: 0 auto;
     background: url("MEGOGO_MainLogo_White.svg") center no-repeat;
