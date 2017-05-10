@@ -259,14 +259,17 @@ a {
 }
 @media (max-width: 568px) and (orientation: landscape ) {
     .header {
-        width: 250px;
+        width: 220px;
         background-position: center;
+    }
+    .media__button-link {
+        font-size: 2.6rem;
     }
     .media__title-container h2 {
         display: none;
     }
     .media__content-left {
-        width: 30%;
+        width: 25%;
     }
     .media__content-right {
         margin-left: 0;
