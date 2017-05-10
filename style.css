@@ -258,8 +258,6 @@ a {
     .media__button-warning {
         display: none;
     }
-    .media__button-warning {
-        font-size: 2.7rem    }
 }
 @media (max-width: 568px) and (orientation: landscape ) {
     body {
@@ -347,6 +345,11 @@ a {
     }
     .info__link {
         margin-top: -10px;
+    }
+    .device--info__text-media,
+    .device--media__button-warning,
+    .device--info__link {
+        display: none;
     }
 }
 @media (max-width: 320px) {
