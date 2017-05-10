@@ -211,7 +211,9 @@ a {
 }
 
 @media screen and (max-device-width: 960px) {
-
+    html {
+        font-size: 5px;
+    }
 }
 
 @media (max-width: 960px){
