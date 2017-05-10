@@ -265,9 +265,6 @@ a {
     .header {
         width: 310px;
     }
-    .media__container {
-        height: 40%;
-    }
     .media__title-container h2 {
         margin-bottom: 0 !important;
         margin-top: 8px !important;
