@@ -205,7 +205,8 @@ h2:focus:after {
 .info__text {
     -webkit-padding-start: 0 !important;
 }
-.info__link {
+.info__link,
+.device--info__link {
     text-align: center;
     color: #83bf0a;
 }
@@ -215,7 +216,7 @@ a {
 
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-device-width: 960px) {
     html {
         font-size: 5px;
     }
@@ -262,6 +263,9 @@ a {
         width: 220px;
         background-position: center;
     }
+    .media__container {
+        height: 27%;
+    }
     .media__button-link {
         font-size: 2.6rem;
     }
@@ -274,8 +278,16 @@ a {
     .media__content-right {
         margin-left: 0;
     }
+    .media__info-big {
+        margin-top: 0
+    }
     .hide {
         display: block;
+    }
+    .device--info__text-media {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
     .info__rules {
         font-size: 1.5rem;
@@ -284,6 +296,9 @@ a {
         display: inline;
     }
     .info__text {
+        display: none;
+    }
+    .info__link {
         display: none;
     }
 }
