@@ -1,4 +1,4 @@
 # Репо для тестирования
 
 
-[Смотреть](https://Grant-Inna.github.io/order.html)
+[Смотреть](https://Grant-Inna.github.io/)
