@@ -210,16 +210,23 @@ a {
     text-decoration: none;
 }
 
+@media (max-width: 960px) {
 
+}
 
 @media (max-width: 960px){
     .container {
         width: 80vw;
     }
+    .title h1 {
+        font-size: 3rem !important;
+    }
+    .media__container {
+        height: 30vh;
+    }
     .media__time {
         display: none;
     }
-
     .media__title-container span {
         display: none;
     }
