@@ -306,11 +306,16 @@ a {
     .info {
         height: 16%;
     }
+    .info__need-help {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
     .info__rules {
         font-size: 1.5rem;
     }
     .info__number {
         display: inline;
+        margin-left: 10px;
     }
     .info__text {
         display: none;
