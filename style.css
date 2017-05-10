@@ -232,6 +232,9 @@ a {
     .media__title-container span {
         display: none;
     }
+    .media__wrapper {
+        width: 95%;
+    }
 }
 @media (max-width: 540px){
     .container {
