@@ -306,6 +306,9 @@ a {
     }
 }
 @media (max-width: 568px) and (orientation: landscape ) {
+    .container {
+        background: url("fvideo.jpg") center;
+    }
     .header {
         width: 220px;
         background-position: center;
