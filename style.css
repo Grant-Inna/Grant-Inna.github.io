@@ -219,6 +219,10 @@ a {
     .media__time {
         display: none;
     }
+
+    .media__title-container span {
+        display: none;
+    }
 }
 @media (max-width: 540px){
     .container {
@@ -238,9 +242,6 @@ a {
     .media__title-container h2 {
         margin-bottom: 0 !important;
         margin-top: 8px !important;
-    }
-    .media__title-container span {
-        display: none;
     }
     .media__title {
         font-size: 2.5rem;
