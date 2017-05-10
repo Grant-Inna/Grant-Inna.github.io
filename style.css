@@ -210,12 +210,16 @@ a {
     text-decoration: none;
 }
 
-@media screen and (max-device-width: 960px) {
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 960px) {
     html {
         font-size: 5px;
     }
     .container {
-        width: 80%;
+        width: 90%;
     }
     .header {
         height: 65px;
@@ -237,6 +241,9 @@ a {
     }
     .media__wrapper {
         width: 95%;
+    }
+    .media__button-warning {
+        display: none;
     }
 }
 @media (max-width: 540px){
