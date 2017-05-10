@@ -240,6 +240,10 @@ a {
     .media__content-left {
         width: 50%;
     }
+    .media__info-big {
+        margin-top: 10px;
+        font-size: 2.8rem;
+    }
     .media__wrapper {
         width: 95%;
     }
