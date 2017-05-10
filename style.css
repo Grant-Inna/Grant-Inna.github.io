@@ -41,7 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  rgba(25, 25, 25, 0.6);
+    background: rgba(25, 25, 25, 0.6) fixed;
 }
 
 .container {
@@ -295,10 +295,12 @@ a {
         width: 100%;
         display: flex;
         justify-content: space-around;
-        
     }
-    .device--media__button-warning, .device--info__link {
-        width: 45%;
+    .device--media__button-warning, {
+        text-align: left;
+    }
+    .device--info__link {
+        text-align: right;
     }
     .info {
         height: 16%;
