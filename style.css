@@ -263,6 +263,12 @@ a {
     text-decoration: none;
 }
 
+.device--info__text-media,
+.device--media__button-warning,
+.device--info__link {
+    display: none;
+}
+
 
 
 @media screen and (max-device-width: 960px) {
