@@ -260,12 +260,9 @@ a {
     }
 }
 @media (max-width: 568px) and (orientation: landscape ) {
-    body {
-        display: flex;
-        align-items: center;
-    }
-    .mainContainer {
-        height: 100vh;
+    .container {
+        width: initial;
+        height: initial;
     }
     .header {
         width: 220px;
