@@ -220,6 +220,7 @@ a {
     }
     .container {
         width: 90%;
+        height: 100%;
     }
     .header {
         height: 65px;
@@ -245,6 +246,8 @@ a {
     .media__button-warning {
         display: none;
     }
+    .media__button-warning {
+        font-size: 2.7rem    }
 }
 @media (max-width: 540px){
     .container {
