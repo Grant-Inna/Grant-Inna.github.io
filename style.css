@@ -260,7 +260,7 @@ a {
 }
 @media (max-width: 568px) and (orientation: landscape ) {
     .mainContainer {
-        background-size: contain;
+        background-attachment: fixed;
     }
     .header {
         width: 220px;
