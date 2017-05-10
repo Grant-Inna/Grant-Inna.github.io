@@ -262,9 +262,6 @@ a {
         width: 250px;
         background-position: center;
     }
-    .media__container {
-        height: 25%;
-    }
     .media__title-container h2 {
         display: none;
     }
@@ -279,6 +276,9 @@ a {
     }
     .info__rules {
         font-size: 1.5rem;
+    }
+    .info__number {
+        display: inline;
     }
     .info__text {
         display: none;
