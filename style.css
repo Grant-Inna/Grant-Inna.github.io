@@ -259,6 +259,9 @@ a {
         font-size: 2.7rem    }
 }
 @media (max-width: 568px) and (orientation: landscape ) {
+    .mainContainer {
+        background-size: contain;
+    }
     .header {
         width: 220px;
         background-position: center;
