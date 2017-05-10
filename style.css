@@ -261,8 +261,7 @@ a {
 }
 @media (max-width: 568px) and (orientation: landscape ) {
     .container {
-        width: initial;
-        height: initial;
+        background-size: auto 100%;
     }
     .header {
         width: 220px;
