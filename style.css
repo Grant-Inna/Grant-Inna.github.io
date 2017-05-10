@@ -295,6 +295,10 @@ a {
         width: 100%;
         display: flex;
         justify-content: space-around;
+        
+    }
+    .device--media__button-warning, .device--info__link {
+        width: 45%;
     }
     .info {
         height: 16%;
