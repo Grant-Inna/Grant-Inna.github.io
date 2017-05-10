@@ -343,9 +343,10 @@ a {
     }
 }
 @media (max-width: 568px) and (orientation: landscape ) {
-    body {
+    body, html {
         height: 230px;
         width: 568px;
+        background-attachment: fixed;
     }
     .header {
         width: 220px;
