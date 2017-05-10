@@ -344,10 +344,8 @@ a {
 }
 @media (max-width: 568px) and (orientation: landscape ) {
     .container {
-        width: inherit;
-        height: inherit;
-        background: url("bg_small.jpg") center no-repeat;
-        background-size: cover;
+        height: 230px;
+        width: 568px;
     }
     .header {
         width: 220px;
@@ -413,8 +411,23 @@ a {
     }
 }
 @media (max-width: 370px){
+    .header {
+        width: 340px
+    }
+    .media__button-link {
+        font-size: 3rem;
+    }
+    .info__rules {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 370px){
     .container {
         width: 96%;
+    }
+    .header {
+        width: 300px
     }
     .media__title-container h2 {
         margin-bottom: 0 !important;
@@ -454,6 +467,7 @@ a {
     }
     .header {
         width: 280px;
+        height: 54px;
     }
     .title h1 {
         padding-top: .5%;
