@@ -237,7 +237,7 @@ a {
     .media__title-container span {
         display: none;
     }
-    ..media__content-left {
+    .media__content-left {
         width: 50%;
     }
     .media__wrapper {
