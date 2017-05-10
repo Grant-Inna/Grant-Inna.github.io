@@ -45,9 +45,9 @@ body {
 }
 
 .container {
-    width: 50vw;
+    width: 50%;
     max-width: 530px;
-    height: 90vh;
+    height: 90%;
     font-family: "PFDinDisplay";
 }
 
@@ -60,9 +60,9 @@ body {
 }
 
 .title h1 {
-    height: 10vh;
+    height: 10%;
     text-align: center;
-    padding-top: 1vh;
+    padding-top: 1%;
     border-top: 1px solid;
     font-size: 3.7rem !important;
     margin-bottom: 0!important;
@@ -71,7 +71,7 @@ body {
 }
 
 .media__container {
-    height: 45vh;
+    height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -178,7 +178,7 @@ h2:focus:after {
 
 
 .info {
-    height: 28vh;
+    height: 28%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -210,19 +210,19 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 960px) {
+@media screen and (max-device-width: 960px) {
 
 }
 
 @media (max-width: 960px){
     .container {
-        width: 80vw;
+        width: 80%;
     }
     .title h1 {
         font-size: 3rem !important;
     }
     .media__container {
-        height: 30vh;
+        height: 30%;
     }
     .media__time {
         display: none;
@@ -233,18 +233,18 @@ a {
 }
 @media (max-width: 540px){
     .container {
-        width: 90vw;
+        width: 90%;
     }
 }
 @media (max-width: 370px){
     .container {
-        width: 96vw;
+        width: 96%;
     }
     .header {
         width: 310px;
     }
     .media__container {
-        height: 40vh;
+        height: 40%;
     }
     .media__title-container h2 {
         margin-bottom: 0 !important;
@@ -260,7 +260,7 @@ a {
         margin: 0 auto;
     }
     .info {
-        height: 31vh;
+        height: 31%;
         width: 95%;
         margin: 0 auto;
     }
@@ -273,17 +273,17 @@ a {
 }
 @media (max-width: 320px) {
     .container {
-        width: 98vw;
-        height: 94vh;
+        width: 98%;
+        height: 94%;
     }
     .header {
         width: 280px;
         height: 72px;
     }
     .title h1 {
-        padding-top: .5vh;
+        padding-top: .5%;
     }
     .info {
-        height: 36vh;
+        height: 36%;
     }
 }
