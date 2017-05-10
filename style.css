@@ -343,7 +343,7 @@ a {
     }
 }
 @media (max-width: 568px) and (orientation: landscape ) {
-    .container {
+    body {
         height: 230px;
         width: 568px;
     }
@@ -422,6 +422,17 @@ a {
     }
 }
 
+@media (max-width: 370px){
+    .media__container {
+        height: 20%;
+    }
+    .media__title {
+        display: none;
+    }
+    .info {
+        height: 40%;
+    }
+}
 @media (max-width: 370px){
     .container {
         width: 96%;
