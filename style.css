@@ -264,7 +264,7 @@ a {
         align-items: center;
     }
     .mainContainer {
-        height: 230px;
+        height: 100vh;
     }
     .header {
         width: 220px;
