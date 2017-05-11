@@ -26,6 +26,9 @@ a {
     text-decoration: none;
 }
 
+.hide {
+    display: none;
+}
 
 @font-face {
     font-family: "PFDinDisplay";
