@@ -229,7 +229,10 @@ a {
     }
     .someInfo__item {
         width: 86%;
-        margin: 0 auto;
+        margin: 10px auto;
+    }
+    .someInfo__item:first-line {
+        margin-left: 10px;
     }
     .someInfo__text {
         display: block;
