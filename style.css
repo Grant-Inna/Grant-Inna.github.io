@@ -161,9 +161,13 @@ a {
 }
 
 @media screen and (min-width: 667px) and (orientation: landscape){ /*iPhone 6 landscape*/
+    .header {
+        width: 40%;
+        height: 8%;
+    }
     .allInformation {
         display: block;
-        font-size: .9rem;
+        font-size: .8rem;
     }
     .priceInfo {
         display: none;
@@ -174,9 +178,8 @@ a {
     .allInformation {
         display: block;
         width: 100%;
-        margin: 0 auto;
+        margin: 20px auto;
         font-size: 1.2rem;
-        text-align: justify;
     }
     .priceInfo {
         display: none;
@@ -256,6 +259,9 @@ a {
     .header {
         width: 52%;
         height: 18%;
+    }
+    .title {
+        margin-bottom: 20px;
     }
     .someInfo {
         display: flex;
