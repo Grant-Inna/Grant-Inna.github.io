@@ -26,9 +26,6 @@ a {
     text-decoration: none;
 }
 
-.hide {
-    display: none;
-}
 
 @font-face {
     font-family: "PFDinDisplay";
@@ -132,6 +129,9 @@ a {
 @media screen and (min-width: 320px) and (orientation: portrait){ /*iPhone 5 portrait*/
     .allInformation {
         display: block;
+    }
+    .priceInfo {
+        display: none;
     }
 }
 
