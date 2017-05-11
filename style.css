@@ -229,6 +229,14 @@ a {
     .someInfo__text {
         display: block;
     }
+    .info__needInfo,
+    .info__moreInfo {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .info__moreInfo {
+        font-size: 1.6rem;
+    }
 }
 
 /*@media screen and (min-width: 1024px) and (orientation: landscape){ /!*iPad landscape*!/
