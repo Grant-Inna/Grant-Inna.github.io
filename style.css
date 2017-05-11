@@ -56,7 +56,7 @@ a {
 }
 .header {
     width: 35%;
-    height: 20%;
+    height: 24%;
     margin: 0 auto;
     padding-top: 1%;
     background: url("MEGOGO_MainLogo_White.svg") center no-repeat;
@@ -226,9 +226,6 @@ a {
         line-height: 46px;
         margin: 15px auto;
     }
-    .someInfo {
-        text-align: center;
-    }
     .someInfo__item {
         font-size: 1.5rem;
     }
@@ -237,7 +234,7 @@ a {
         display: none;
     }
     .someInfo__item {
-        width: 45%;
+        width: 86%;
         margin: 0 auto;
     }
     .someInfo__text {
@@ -246,17 +243,15 @@ a {
     .info__needInfo,
     .info__moreInfo {
         width: 100%;
-        margin: 0 auto;
+        text-align: center;
     }
     .info__moreInfo {
         font-size: 1.6rem;
-        text-align: center;
         margin-top: 20px;
     }
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape){  /*iPad landscape*/
-
     .header {
         width: 60%;
         height: 20%;
