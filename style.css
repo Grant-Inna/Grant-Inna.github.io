@@ -250,10 +250,20 @@ a {
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape){  /*iPad landscape*/
+    body {
+        width: 100%;
+    }
     .header {
         width: 60%;
-        height: 20%;
+        height: 18%;
     }
+    .someInfo {
+        display: flex;
+    }
+    .someInfo__text {
+        font-size: 1.2rem;
+    }
+
 }
 
 
