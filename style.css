@@ -230,7 +230,7 @@ a {
         margin-left: -10px;
     }
     .someInfo__text {
-        display: block;
+        display: inline-block;
     }
     .priceInfo {
         font-size: 1.3rem;
