@@ -226,7 +226,10 @@ a {
     .someInfo__wrapper-second {
         display: none;
     }
-    .someInfo__text {
+    .someInfo__item {
+        width: 65%;
+        text-align: center;
+        margin: 10px auto;
     }
     .someInfo__text {
         display: inline-block;
