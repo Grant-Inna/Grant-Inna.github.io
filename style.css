@@ -254,6 +254,7 @@ a {
     }
     .someInfo__item {
         width: 40%;
+        margin: 10px auto;
     }
     .someInfo__text {
         font-size: 1.2rem;
