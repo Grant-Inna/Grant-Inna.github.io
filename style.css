@@ -181,7 +181,7 @@ a {
 @media screen and (min-width: 667px) and (orientation: landscape){ /*iPhone 6 landscape*/
     .header {
         width: 40%;
-        height: 5%;
+        height: 9%;
     }
     .allInformation {
         display: block;
@@ -205,6 +205,9 @@ a {
 }
 
 @media screen and (min-width: 736px) and (orientation: landscape){ /*iPhone 6 Plus landscape*/
+    .header {
+        height: 12%;
+    }
 
 }
 
