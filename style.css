@@ -152,10 +152,9 @@ a {
     .mainContainer {
         background: url("bg_special.jpg") center no-repeat;
     }
-    /*.container {
-        height: 230px;
-        width: 568px;
-    }*/
+    .info__needInfo {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 375px) and (orientation: portrait){ /*iPhone 6 portrait*/
