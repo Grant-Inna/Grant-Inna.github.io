@@ -146,6 +146,7 @@ a {
 @media all and (device-width: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){ /*iPhone 5 landscape*/
     body {
         position: fixed;
+        max-height: 320px;
     }
     .container {
         height: 230px;
