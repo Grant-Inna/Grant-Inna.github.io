@@ -254,18 +254,13 @@ a {
     .someInfo {
         display: block;
     }
-    .someInfo__wrapper {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
     }
     .someInfo__wrapper-second {
         display: none;
     }
     .someInfo__item {
-        width: 40%;
+        width: 65%;
+        text-align: center;
     }
     .someInfo__text {
         font-size: 1.2rem;
