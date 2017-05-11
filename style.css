@@ -56,7 +56,7 @@ a {
 }
 .header {
     width: 35%;
-    height: 15%;
+    height: 20%;
     margin: 0 auto;
     padding-top: 1%;
     background: url("MEGOGO_MainLogo_White.svg") center no-repeat;
@@ -234,6 +234,10 @@ a {
     .someInfo__item:last-child,
     .someInfo__item:nth-last-child(2) {
         display: none;
+    }
+    .someInfo__item {
+        width: 45%;
+        margin: 0 auto;
     }
     .someInfo__text {
         display: block;
