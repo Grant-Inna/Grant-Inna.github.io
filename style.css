@@ -74,9 +74,6 @@ a {
     justify-content: space-around;
     margin-top: 10px;
 }
-.someInfo__item {
-    min-width: 60px;
-}
 .someInfo__item-strong {
     color: #83bf0a;
 }
@@ -140,6 +137,9 @@ a {
     .header {
         width: 45%;
         height: 12%;
+    }
+    .someInfo__item {
+        min-width: 60px;
     }
 
 }
