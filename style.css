@@ -147,8 +147,6 @@ a {
     html, body {
         display: flex;
         align-items: center;
-        height: 230px;
-        width: 568px;
     }
     .mainContainer {
         background: url("bg_special.jpg") center no-repeat;
