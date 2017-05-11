@@ -188,6 +188,10 @@ a {
         font-size: 1.8rem;
         padding-top: 5px;
     }
+    .header {
+        width: 40%;
+        height: 16%;
+    }
     .allInformation {
         display: block;
         font-size: 1.3rem;
@@ -219,6 +223,9 @@ a {
     }
     .someInfo {
         text-align: center;
+    }
+    .someInfo__item {
+        font-size: 1.5rem;
     }
     .someInfo__item:last-child,
     .someInfo__item:nth-last-child(2) {
