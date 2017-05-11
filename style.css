@@ -159,11 +159,9 @@ a {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        overflow: hidden;
     }
     .mainContainer {
-        background: url("bg_special.jpg") center no-repeat;
-        position: fixed;
+        background: url("bg_special.jpg") no-repeat fixed;
         height: 230px;
         width: 568px;
     }
