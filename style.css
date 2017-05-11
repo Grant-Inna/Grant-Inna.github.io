@@ -154,6 +154,12 @@ a {
 }
 
 @media screen and (min-width: 375px) and (orientation: portrait){ /*iPhone 6 portrait*/
+    .title {
+        margin-bottom: 30px;
+    }
+    .someInfo {
+        margin-bottom: 30px;
+    }
     .allInformation {
         display: block;
         font-size: .95rem;
@@ -163,7 +169,7 @@ a {
 @media screen and (min-width: 667px) and (orientation: landscape){ /*iPhone 6 landscape*/
     .header {
         width: 40%;
-        height: 8%;
+        height: 5%;
     }
     .allInformation {
         display: block;
