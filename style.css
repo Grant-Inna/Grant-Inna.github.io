@@ -252,13 +252,8 @@ a {
     .title {
         margin-bottom: 20px;
     }
-    /*.someInfo {*/
-        /*display: -webkit-box;*/
-        /*display: -ms-flexbox;*/
-        /*display: flex;*/
-    /*}*/
     .someInfo__item {
-        width: 44%;
+        width: 40%;
         margin: 10px auto;
     }
     .someInfo__text {
