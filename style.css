@@ -164,8 +164,6 @@ a {
     }*/
     html{ position:fixed }
     body {
-        position: fixed;
-        bottom: 0;
         width:100%;
         height: 320px !important;
     }
