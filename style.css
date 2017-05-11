@@ -143,6 +143,15 @@ a {
     }
 
 }
+@media all and (device-width: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){ /*iPhone 5 landscape*/
+    body {
+        position: fixed;
+    }
+    .container {
+        height: 230px;
+        width: 568px;
+    }
+}
 
 @media screen and (min-width: 375px) and (orientation: portrait){ /*iPhone 6 portrait*/
     .allInformation {
@@ -184,7 +193,7 @@ a {
         padding-top: 5px;
     }
     .header {
-        width: 40%;
+        width: 60%;
         height: 16%;
     }
     .allInformation {
@@ -237,6 +246,7 @@ a {
     .info__moreInfo {
         font-size: 1.6rem;
         text-align: center;
+        margin-top: 20px;
     }
 }
 
