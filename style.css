@@ -152,20 +152,19 @@ a {
 
 }
 @media all and (device-width: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){ /*iPhone 5 landscape*/
-    html{
-
+    body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
         width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    body
-    {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
+        height: 100%;
     }
     .mainContainer {
+        height: 230px;
+        width: 568px;
         background: url("bg_special.jpg") no-repeat;
     }
     .info__needInfo {
