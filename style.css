@@ -254,13 +254,14 @@ a {
     .someInfo {
         display: block;
     }
-    }
+
     .someInfo__wrapper-second {
         display: none;
     }
     .someInfo__item {
         width: 65%;
         text-align: center;
+        margin: 10px auto;
     }
     .someInfo__text {
         font-size: 1.2rem;
