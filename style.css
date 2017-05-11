@@ -221,8 +221,8 @@ a {
         margin-top: 15px;
     }
     .buttonWrapper__inner {
-        height: 40px;
-        line-height: 40px;
+        height: 46px;
+        line-height: 46px;
         margin: 15px auto;
     }
     .someInfo {
@@ -250,9 +250,13 @@ a {
     }
 }
 
-/*@media screen and (min-width: 1024px) and (orientation: landscape){ /!*iPad landscape*!/
+@media screen and (min-width: 1024px) and (orientation: landscape){  /*iPad landscape*/
 
-}*/
+    .header {
+        width: 60%;
+        height: 20%;
+    }
+}
 
 
 
