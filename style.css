@@ -266,7 +266,10 @@ a {
         display: none;
     }
     .someInfo__item {
-        width: 10%;
+        width: 40%;
+    }
+    .someInfo__item-r {
+        float: right;
     }
     .someInfo__text {
         font-size: 1.2rem;
