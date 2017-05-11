@@ -148,8 +148,6 @@ a {
         position: fixed;
     }
     .mainContainer {
-        display: flex;
-        align-items: center;
         background: url("bg_special.jpg") center no-repeat;
         background-size: contain;
     }
