@@ -220,9 +220,9 @@ a {
         width: 45%;
         text-align: center;
     }
-   /* .someInfo__wrapper {
+    .someInfo__wrapper {
         height: initial;
-    }*/
+    }
     .someInfo__wrapper-second {
         display: none;
     }
@@ -251,6 +251,9 @@ a {
     }
     .title {
         margin-bottom: 20px;
+    }
+    .someInfo {
+        display: block;
     }
     .someInfo__wrapper {
         width: 100%;
