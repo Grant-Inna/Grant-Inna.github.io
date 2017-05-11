@@ -262,8 +262,11 @@ a {
         justify-content: space-between;
         text-align: center;
     }
+    .someInfo__wrapper-second {
+        display: none;
+    }
     .someInfo__item {
-        width: 30%;
+        width: 10%;
     }
     .someInfo__text {
         font-size: 1.2rem;
