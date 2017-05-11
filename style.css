@@ -161,7 +161,7 @@ a {
         font-size: .9rem;
     }
     .info__moreInfo {
-        top: 270px;
+        display: block;
     }
 }
 
