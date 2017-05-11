@@ -96,7 +96,7 @@ a {
     font-weight: normal;
     color: #ffffff;
     text-align: center;
-    margin: 15px auto;
+    margin: 10px auto;
     -webkit-transition: all .4s;
     transition: all .4s;
 }
@@ -252,11 +252,11 @@ a {
     .title {
         margin-bottom: 20px;
     }
-    .someInfo {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
+    /*.someInfo {*/
+        /*display: -webkit-box;*/
+        /*display: -ms-flexbox;*/
+        /*display: flex;*/
+    /*}*/
     .someInfo__item {
         width: 44%;
         margin: 10px auto;
