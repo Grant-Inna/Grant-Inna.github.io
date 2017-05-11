@@ -228,11 +228,11 @@ a {
         display: none;
     }
     .someInfo__item {
-        width: 86%;
+        width: 84%;
         margin: 10px auto;
     }
-    .someInfo__item:first-line {
-        margin-left: 10px;
+    .someInfo__text {
+        margin-left: -10px;
     }
     .someInfo__text {
         display: block;
