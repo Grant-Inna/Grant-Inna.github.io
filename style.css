@@ -252,9 +252,15 @@ a {
     .title {
         margin-bottom: 20px;
     }
+    .someInfo__wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
     .someInfo__item {
         width: 40%;
-        margin: 10px auto;
     }
     .someInfo__text {
         font-size: 1.2rem;
