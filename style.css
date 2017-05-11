@@ -252,6 +252,9 @@ a {
     .title {
         margin-bottom: 20px;
     }
+    .someInfo__wrapper {
+        height: 50px;
+    }
     .someInfo__item {
         width: 40%;
         margin: 10px auto;
