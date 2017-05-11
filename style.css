@@ -145,28 +145,82 @@ a {
 }
 
 @media screen and (min-width: 375px) and (orientation: portrait){ /*iPhone 6 portrait*/
-
+    .allInformation {
+        display: block;
+        font-size: .95rem;
+    }
 }
 
 @media screen and (min-width: 667px) and (orientation: landscape){ /*iPhone 6 landscape*/
+    .allInformation {
+        display: block;
+        font-size: .9rem;
+    }
+    .priceInfo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 414px) and (orientation: portrait){ /*iPhone 6 Plus portrait*/
+    .allInformation {
+        display: block;
+        font-size: 1.2rem;
+    }
+    .priceInfo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 736px) and (orientation: landscape){ /*iPhone 6 Plus landscape*/
 
 }
 
-@media screen and (min-width: 414px) and (orientation: portrait){ /*iPhone 6 Plump portrait*/
-
+@media screen and (min-width: 768px) { /*iPad portrait*/
+    .title {
+        font-size: 1.8rem;
+        padding-top: 5px;
+    }
+    .allInformation {
+        display: block;
+        font-size: 1.3rem;
+    }
+    .priceInfo {
+        display: none;
+    }
+    .info {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .info__needInfo {
+        font-size: 1.1rem;
+    }
+    .someInfo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+    .buttonWrapper__inner {
+        height: 40px;
+        line-height: 40px;
+        margin: 15px auto;
+    }
+    .someInfo {
+        text-align: center;
+    }
+    .someInfo__item:last-child,
+    .someInfo__item:nth-last-child(2) {
+        display: none;
+    }
+    .someInfo__text {
+        display: block;
+    }
 }
 
-@media screen and (min-width: 736px) and (orientation: landscape){ /*iPhone 6 Plump landscape*/
+/*@media screen and (min-width: 1024px) and (orientation: landscape){ /!*iPad landscape*!/
 
-}
-
-@media screen and (min-width: 768px) and (orientation: portrait){ /*iPad portrait*/
-
-}
-
-@media screen and (min-width: 1024px) and (orientation: landscape){ /*iPad landscape*/
-
-}
+}*/
 
 
 
