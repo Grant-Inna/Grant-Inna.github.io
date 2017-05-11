@@ -68,9 +68,21 @@ a {
     border-top: 1px solid #f2f2f2;
 }
 .someInfo {
-    width: 100%;
+    width: 98%;
     height: auto;
-    margin: 20px;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+}
+.someInfo__wrapper {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.someInfo__item {
+    width: 50%;
+    text-align: center;
 }
 .someInfo__item-strong {
     color: #83bf0a;
@@ -122,18 +134,10 @@ a {
 
 
 @media screen and (min-width: 320px) and (orientation: portrait){ /*iPhone 5 portrait*/
-    .allInformation {
-        display: block;
-        font-size: .85rem;
-    }
     .header {
         width: 45%;
         height: 12%;
     }
-    .someInfo__item {
-        min-width: 60px;
-    }
-
 }
 @media all and (device-width: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){ /*iPhone 5 landscape*/
     body {
@@ -156,10 +160,6 @@ a {
     .someInfo {
         margin-bottom: 30px;
     }
-    .allInformation {
-        display: block;
-        font-size: .95rem;
-    }
 }
 
 @media screen and (min-width: 667px) and (orientation: landscape){ /*iPhone 6 landscape*/
@@ -167,19 +167,9 @@ a {
         width: 40%;
         height: 15%;
     }
-    .allInformation {
-        display: block;
-        font-size: .8rem;
-    }
 }
 
 @media screen and (min-width: 414px) and (orientation: portrait){ /*iPhone 6 Plus portrait*/
-    .allInformation {
-        display: block;
-        width: 100%;
-        margin: 20px auto;
-        font-size: 1.2rem;
-    }
 }
 
 @media screen and (min-width: 736px) and (orientation: landscape){ /*iPhone 6 Plus landscape*/
@@ -190,14 +180,11 @@ a {
     .title {
         font-size: 1.8rem;
         padding-top: 5px;
+        padding-bottom: 20px;
     }
     .header {
         width: 60%;
         height: 16%;
-    }
-    .allInformation {
-        display: block;
-        font-size: 1.3rem;
     }
     .info {
         width: 100%;
@@ -218,20 +205,23 @@ a {
     }
     .someInfo__item {
         font-size: 1.5rem;
+        width: 45%;
+        text-align: center;
     }
-    .someInfo__item:last-child,
-    .someInfo__item:nth-last-child(2) {
+    .someInfo__wrapper {
+        height: initial;
+    }
+    .someInfo__wrapper-second {
         display: none;
-    }
-    .someInfo__item {
-        width: 94%;
-        margin: 10px auto;
     }
     .someInfo__text {
         margin-left: -10px;
     }
     .someInfo__text {
         display: block;
+    }
+    .priceInfo {
+        font-size: 1.3rem;
     }
     .info__moreInfo {
         font-size: 1.6rem;
