@@ -124,8 +124,7 @@ a {
     text-align: center;
 }
 .info__moreInfo {
-    position: absolute;
-    bottom: 30px;
+
 }
 .needInfo__number {
     font-weight: 800;
