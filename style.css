@@ -162,6 +162,7 @@ a {
         width: 100%;
         height: 100%;
     }*/
+    html{ position:fixed }
     .mainContainer {
         height: 230px;
         width: 568px;
