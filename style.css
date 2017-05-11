@@ -159,7 +159,6 @@ a {
         height: 230px;
         width: 568px;
         background: url("bg_special.jpg") no-repeat;
-        overflow: hidden;
     }
     .info__needInfo {
         font-size: 1rem;
