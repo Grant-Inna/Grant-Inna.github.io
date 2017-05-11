@@ -161,7 +161,9 @@ a {
         align-items: center;
     }
     .mainContainer {
-        background: url("bg_special.jpg") no-repeat fixed;
+        background: url("bg_special.jpg") no-repeat;
+    }
+    .container {
         height: 230px;
         width: 568px;
     }
