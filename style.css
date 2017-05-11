@@ -159,6 +159,7 @@ a {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        overflow-y: hidden;
     }
     .mainContainer {
         background: url("bg_special.jpg") center no-repeat;
