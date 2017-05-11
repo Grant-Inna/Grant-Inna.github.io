@@ -70,10 +70,7 @@ a {
 .someInfo {
     width: 100%;
     height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-top: 10px;
 }
@@ -94,16 +91,18 @@ a {
     text-align: center;
     margin: 8px auto;
     -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
     transition: all .4s;
 }
 .buttonWrapper__inner:hover {
-    -webkit-box-shadow: inset 0 0 8px 5px rgba(242, 242, 242, 0.7);
     box-shadow: inset 0 0 8px 5px rgba(242, 242, 242, 0.7);
     -webkit-transition: box-shadow .4s;
-    -webkit-transition: -webkit-box-shadow .4s;
-    transition: -webkit-box-shadow .4s;
+    -moz-transition: box-shadow .4s;
+    -ms-transition: box-shadow .4s;
+    -o-transition: box-shadow .4s;
     transition: box-shadow .4s;
-    transition: box-shadow .4s, -webkit-box-shadow .4s;
 }
 .priceInfo {
     font-size: .85rem;
@@ -112,22 +111,15 @@ a {
 .info {
     width: 100%;
     height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-top: 8px;
 }
 .info__needInfo {
-    -webkit-box-flex: 5;
-    -ms-flex: 5;
     flex: 5;
     font-size: .7rem;
 }
 .info__moreInfo {
-    -webkit-box-flex: 3;
-    -ms-flex: 3;
     flex: 3;
     padding-left: 3%;
 }
@@ -239,6 +231,7 @@ a {
 /*@media screen and (min-width: 1024px) and (orientation: landscape){ /!*iPad landscape*!/
 
 }*/
+
 
 
 
