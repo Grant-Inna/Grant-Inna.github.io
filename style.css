@@ -151,6 +151,9 @@ a {
     .info__needInfo {
         font-size: 1rem;
     }
+    .someInfo__wrapper-second {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 375px) and (orientation: portrait){ /*iPhone 6 portrait*/
