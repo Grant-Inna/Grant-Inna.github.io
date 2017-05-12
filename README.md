@@ -1,4 +1,4 @@
 # Репо для тестирования
 
 
-[Смотреть](https://Grant-Inna.github.io/)
+[Смотреть](http://grant-inna.github.io/MEGOGO_Landing-page/.)
