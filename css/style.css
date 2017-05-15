@@ -162,6 +162,9 @@ a {
     .priceInfo {
         font-size: .9rem;
     }
+    .info {
+        margin-top: 5px;
+    }
 }
 
 @media screen and (min-width: 375px) and (orientation: portrait){ /*iPhone 6 portrait*/
