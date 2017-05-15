@@ -153,6 +153,9 @@ a {
     .someInfo__wrapper {
         height: 20px;
     }
+    .someInfo__item {
+        display: none;
+    }
     .someInfo__wrapper-second {
         display: none;
     }
