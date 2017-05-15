@@ -151,7 +151,7 @@ a {
         font-size: 1rem;
     }
     .someInfo__wrapper {
-        height: 20px;
+        display: none;
     }
     .someInfo__item {
         display: none;
