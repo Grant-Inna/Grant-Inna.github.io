@@ -144,6 +144,9 @@ a {
 .someInfo__item-hide {
     display: none;
 }
+p {
+    -webkit-margin-after: .3em;
+}
 
 
 @media screen and (min-width: 320px) and (orientation: portrait){ /*iPhone 5 portrait*/
