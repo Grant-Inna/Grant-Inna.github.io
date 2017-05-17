@@ -54,13 +54,22 @@ a {
     max-width: 1000px;
     height: 90%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 .header {
     width: 35%;
     height: 24%;
     margin: 0 auto;
+
+    -webkit-box-flex: 2;
+
+    -ms-flex: 2;
 
     flex: 2;
 
@@ -70,6 +79,10 @@ a {
 .title {
     font-size: 1.3rem;
     text-align: center;
+
+    -webkit-box-flex: 1;
+
+    -ms-flex: 1;
 
     flex: 1;
 
@@ -104,6 +117,8 @@ a {
     color: #83bf0a;
 }
 .buttonWrapper {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
     flex: 4;
 }
 .buttonWrapper__inner {
@@ -141,7 +156,11 @@ a {
     position: absolute;
     bottom: 0;
     line-height: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 }
 .hide__content {
@@ -162,9 +181,13 @@ p {
 @media screen and (min-width: 320px) and (orientation: portrait){ /*iPhone 5 portrait*/
     .header {
         width: 45%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
     }
     .someInfo {
+        -webkit-box-flex: 3;
+        -ms-flex: 3;
         flex: 3;
     }
     .someInfo__item {
@@ -188,9 +211,13 @@ p {
         height: 70%;
     }
     .header {
+        -webkit-box-flex: 2;
+        -ms-flex: 2;
         flex: 2;
     }
     .title {
+        -webkit-box-flex: 2;
+        -ms-flex: 2;
         flex: 2;
     }
     .info__needInfo {
@@ -270,6 +297,8 @@ p {
         height: auto;
     }
     .buttonWrapper {
+        -webkit-box-flex: 3;
+        -ms-flex: 3;
         flex: 3;
     }
     .buttonWrapper__inner {
