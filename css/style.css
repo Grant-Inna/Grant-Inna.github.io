@@ -54,18 +54,25 @@ a {
     max-width: 1000px;
     height: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 .header {
     width: 35%;
     height: 24%;
     margin: 0 auto;
-    padding-top: 1%;
+
+    flex: 8;
+
     background: url("../img/MEGOGO_MainLogo_White.svg") center no-repeat;
     background-size: contain;
 }
 .title {
     font-size: 1.3rem;
     text-align: center;
+
+    flex: 2;
+
     border-top: 1px solid #f2f2f2;
 }
 .someInfo {
@@ -97,6 +104,7 @@ a {
     color: #83bf0a;
 }
 .buttonWrapper {
+    flex: 4;
 
 }
 .buttonWrapper__inner {
