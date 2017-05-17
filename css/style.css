@@ -265,6 +265,10 @@ p {
     }
     .buttonWrapper {
         flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .buttonWrapper__inner {
         height: 50px;
