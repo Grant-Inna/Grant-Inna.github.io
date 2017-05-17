@@ -141,6 +141,9 @@ a {
     font-family: Arial, send-serif !important;
     font-size:10px !important;
 }
+.someInfo__item-hide {
+    display: none;
+}
 
 
 @media screen and (min-width: 320px) and (orientation: portrait){ /*iPhone 5 portrait*/
@@ -149,7 +152,7 @@ a {
         height: 12%;
     }
     .someInfo__item {
-        margin: 5px auto;
+        margin: 3px auto;
     }
 
 }
@@ -235,16 +238,12 @@ a {
         width: 100%;
         height: auto;
     }
+
     .buttonWrapper__inner {
         height: 50px;
         line-height: 50px;
         font-size: 1.5rem;
         margin: 15px auto;
-    }
-    .someInfo__item {
-        font-size: 1.5rem;
-        width: 45%;
-        text-align: center;
     }
     .someInfo__wrapper {
         display: block;
@@ -252,10 +251,14 @@ a {
     .someInfo__wrapper-second {
         display: none;
     }
+    .someInfo__item-hide {
+        display: block;
+    }
     .someInfo__item {
-        width: 65%;
+        width: 75%;
         text-align: center;
         margin: 10px auto;
+        font-size: 1.5rem;
     }
     .someInfo__text {
         display: inline-block;
