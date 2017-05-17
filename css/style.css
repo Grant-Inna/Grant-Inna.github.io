@@ -222,6 +222,9 @@ p {
     .someInfo {
         margin-bottom: 30px;
     }
+    br {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 667px) and (orientation: landscape){ /*iPhone 6 landscape*/
@@ -231,6 +234,9 @@ p {
     }
     .someInfo__item {
         margin: 5px auto;
+    }
+    br {
+        display: block;
     }
 
 }
@@ -298,7 +304,7 @@ p {
         font-size: 1.3rem;
     }
     p {
-        -webkit-margin-after: 0;
+        -webkit-margin-after: .5em;
     }
 }
 
