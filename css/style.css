@@ -52,7 +52,7 @@ a {
 .container {
     width: 98%;
     max-width: 1000px;
-    height: 50%;
+    height: 90%;
     margin: 0 auto;
 }
 .header {
@@ -95,6 +95,9 @@ a {
 }
 .someInfo__item-strong {
     color: #83bf0a;
+}
+.buttonWrapper {
+
 }
 .buttonWrapper__inner {
     width: 80%;
@@ -169,7 +172,7 @@ p {
         background: url("../img/bg_special.jpg") no-repeat;
     }
     .container {
-        height: 25%;
+        height: 70%;
     }
     .info__needInfo {
         font-size: 1rem;
@@ -221,9 +224,6 @@ p {
 }
 
 @media screen and (min-width: 768px) { /*iPad portrait*/
-    .container {
-        height: 85%;
-    }
     .title {
         font-size: 1.8rem;
         padding-top: 5px;
@@ -244,6 +244,7 @@ p {
         width: 100%;
         height: auto;
     }
+
     .buttonWrapper__inner {
         height: 50px;
         line-height: 50px;
@@ -280,9 +281,6 @@ p {
     body {
         width: 100%;
     }
-    .container {
-        height: 75%;
-    }
     .header {
         width: 52%;
         height: 18%;
@@ -293,6 +291,7 @@ p {
     .someInfo {
         display: block;
     }
+
     .someInfo__wrapper-second {
         display: none;
     }
