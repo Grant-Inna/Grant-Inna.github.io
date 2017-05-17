@@ -62,7 +62,7 @@ a {
     height: 24%;
     margin: 0 auto;
 
-    flex: 8;
+    flex: 4;
 
     background: url("../img/MEGOGO_MainLogo_White.svg") center no-repeat;
     background-size: contain;
