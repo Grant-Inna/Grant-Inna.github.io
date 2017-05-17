@@ -105,7 +105,6 @@ a {
 }
 .buttonWrapper {
     flex: 4;
-
 }
 .buttonWrapper__inner {
     width: 80%;
@@ -264,7 +263,9 @@ p {
         width: 100%;
         height: auto;
     }
-
+    .buttonWrapper {
+        flex: 3;
+    }
     .buttonWrapper__inner {
         height: 50px;
         line-height: 50px;
