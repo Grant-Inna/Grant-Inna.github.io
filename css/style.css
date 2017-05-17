@@ -168,9 +168,6 @@ p {
         width: 568px;
         background: url("../img/bg_special.jpg") no-repeat;
     }
-    .container {
-        height: 70%;
-    }
     .info__needInfo {
         font-size: 1rem;
     }
