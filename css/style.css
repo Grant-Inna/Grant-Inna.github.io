@@ -269,6 +269,9 @@ p {
     .priceInfo {
         font-size: 1.3rem;
     }
+    p {
+        -webkit-margin-after: .1em;
+    }
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape){  /*iPad landscape*/
