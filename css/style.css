@@ -168,6 +168,9 @@ p {
         width: 568px;
         background: url("../img/bg_special.jpg") no-repeat;
     }
+    .container {
+        height: 25%;
+    }
     .info__needInfo {
         font-size: 1rem;
     }
@@ -219,7 +222,7 @@ p {
 
 @media screen and (min-width: 768px) { /*iPad portrait*/
     .container {
-        height: 80%;
+        height: 85%;
     }
     .title {
         font-size: 1.8rem;
@@ -241,7 +244,6 @@ p {
         width: 100%;
         height: auto;
     }
-
     .buttonWrapper__inner {
         height: 50px;
         line-height: 50px;
@@ -278,6 +280,9 @@ p {
     body {
         width: 100%;
     }
+    .container {
+        height: 75%;
+    }
     .header {
         width: 52%;
         height: 18%;
@@ -288,7 +293,6 @@ p {
     .someInfo {
         display: block;
     }
-
     .someInfo__wrapper-second {
         display: none;
     }
