@@ -120,7 +120,7 @@ a {
     transition: box-shadow .4s, -webkit-box-shadow .4s;
 }
 .priceInfo {
-    font-size: 1.1rem;
+    font-size: 18px !important;
     text-align: center;
 }
 .info {
