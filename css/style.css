@@ -8,7 +8,8 @@
     font-weight: normal;
 }
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body, html {
     height: 100%;
@@ -41,7 +42,6 @@ body {
     font-family: Arial,sans-serif;
 }
 .wrapper__inner {
-    -webkit-background-size: cover;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -69,12 +69,16 @@ body {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 .header__col {
-    flex-basis: 50%;
     margin: 0 auto;
 }
 .header__logo {
@@ -90,9 +94,11 @@ body {
 }
 .buttons {
     position: absolute;
-    top: 45%;
+    top: 75%;
     width: 100%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     text-align: center;
 }
 .buttons__btn {
@@ -109,7 +115,7 @@ body {
     font-size: 30px;
 }
 .priceInfo {
-    font-size: medium;
+    font-size: 18px;
 
 }
 .main {
@@ -121,10 +127,34 @@ body {
 .main__inner {
     display: table-cell;
 }
+
+/*============  INFO BLOCK   ============*/
+.someInfo {
+    width: 100%;
+}
+.someInfo__wrapper {
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+}
+.someInfo__item {
+    margin: 30px auto;
+}
+.someInfo__wrapper-second {
+    display: none;
+}
+
+.someInfo__item-strong {
+    color: #83bf0a;
+}
+
+/*============ END OF INFO BLOCK   ============*/
+
 .footer {
     width: 100%;
     background-color: rgba(0, 0, 0, .7);
     display: table-row;
+    text-align: center;
 }
 .footer__text-block {
     padding: 10px;
@@ -148,7 +178,7 @@ body {
         padding: 5px
     }
     .buttons {
-        top: 42%;
+        top: 80%;
     }
     .footer {
         position: fixed;
@@ -157,7 +187,6 @@ body {
     .buttons__btn {
         font-size: 20px;
         padding: 15px 50px 15px 20px;
-        -webkit-background-size: 48px;
         background-size: 48px;
     }
 }
