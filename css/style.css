@@ -116,14 +116,16 @@ a {
 .someInfo__item-strong {
     color: #83bf0a;
 }
-.buttonWrapper {
+.buttonWrapper__link {
     -webkit-box-flex: 4;
     -ms-flex: 4;
     flex: 4;
+
 }
 .buttonWrapper__inner {
     width: 80%;
     height: auto;
+
     line-height: 40px;
     border-radius: 4px;
     background-color: #83bf0a;
@@ -134,6 +136,7 @@ a {
     margin: 10px auto;
     -webkit-transition: all .4s;
     transition: all .4s;
+
 }
 .buttonWrapper__inner:hover {
     -webkit-box-shadow: inset 0 0 8px 5px rgba(242, 242, 242, 0.7);
