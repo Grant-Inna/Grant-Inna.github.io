@@ -65,11 +65,8 @@ body {
     height: 10%;
 }
 .header__inner {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
@@ -94,7 +91,7 @@ body {
 }
 .buttons {
     position: absolute;
-    top: 75%;
+    top: 80%;
     width: 100%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -176,6 +173,9 @@ body {
 @media (orientation: landscape) {
     .footer__text-block {
         padding: 5px
+    }
+    .someInfo__item-hide {
+        display: none;
     }
     .buttons {
         top: 80%;

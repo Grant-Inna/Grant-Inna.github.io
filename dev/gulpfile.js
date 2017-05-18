@@ -21,7 +21,7 @@ gulp.task('minCss', function() {
 });
 
 gulp.task('watch_scss', function() {
-    gulp.watch('../css/style.css', ['css'])
+    gulp.watch('./style.css', ['css'])
 });
 gulp.task('watch_min', function() {
     gulp.watch('../css/style.css', ['minCss'])
