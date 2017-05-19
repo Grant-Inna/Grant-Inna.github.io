@@ -12,86 +12,74 @@
     <script type="text/javascript">if (top === self) { } else { window.top.location = self.location; }</script>
 </head>
 <body>
-<div class="wrapper">
-    <header class="header">
-        <div class="header__inner">
-            <div class="header__col">
-                <div class="header__logo">
-                    <img src="img/MEGOGO_MainLogo_White.svg" alt="logo" class="header__img">
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="main__inner">
 
-            <div class="someInfo">
-                <div class="someInfo__wrapper">
-                    <div class="someInfo__item">
-                        Более <strong class="someInfo__item-strong">7500</strong> фильмов <br>
+<div class="mainContainer">
+
+    <div class="container">
+
+            <header class="header"></header>
+            <h1 class="title">Вам не придётся искать интересные
+            кино <br>и мультфильмы</h1>
+
+
+
+        <div class="someInfo">
+            <div class="someInfo__wrapper">
+                <div class="someInfo__item">
+                    Более <strong class="someInfo__item-strong">7500</strong> фильмов
                     <span class="someInfo__text hide">Получите доступ к тысячам фильмов,
                         сериалов и мультфильмов из премиальной коллекции кино по подписке, а также
                         отключение рекламы на всём MEGOGO (более 5500 фильмов).</span>
-                    </div>
-                    <div class="someInfo__item someInfo__item-r">
-                        <strong class="someInfo__item-strong">99</strong> каналов <br>
+                </div>
+                <div class="someInfo__item someInfo__item-r">
+                    <strong class="someInfo__item-strong">99</strong> каналов
                     <span class="someInfo__text hide">Развлекательные и новостные
                         телеканалы. Ваши любимые передачи и шоу. Оперативное освещение последних новостей
                         и событий страны. Важнейшие спортивные и культурные мероприятия в прямом эфире.</span>
-                    </div>
-                    <div class="someInfo__item">
-                        <strong class="someInfo__item-strong">28</strong> интерактивных каналов MEGOGO <br>
+                </div>
+                <div class="someInfo__item someInfo__item-hide">
+                    Смотрите MEGOGO на <strong class="someInfo__item-strong">любых</strong> устройствах
                     <span class="someInfo__text hide">В дороге, на прогулке, дома — смотрите ваши любимые фильмы
                         на MEGOGO везде, где есть доступ к Интернету — Smart TV, iPad или iPhone, смартфонах и
                         планшетах Android, компьютерах и ноутбуках.</span>
-                    </div>
-                    <div class="someInfo__item someInfo__item-hide">
-                        Смотрите MEGOGO на <strong class="someInfo__item-strong">любых</strong> устройствах <br>
-                    <span class="someInfo__text hide">В дороге, на прогулке, дома — смотрите ваши любимые фильмы
-                        на MEGOGO везде, где есть доступ к Интернету — Smart TV, iPad или iPhone, смартфонах и
-                        планшетах Android, компьютерах и ноутбуках.</span>
-                    </div>
-                </div>
-                <div class="someInfo__wrapper someInfo__wrapper-second">
-                    <div class="someInfo__item">Управление просмотром</div>
-                    <div class="someInfo__item">Без рекламы</div>
-                </div>
-                <div class="someInfo__wrapper someInfo__wrapper-second">
-                    <div class="someInfo__item">Безупречное качество изображения</div>
-                    <div class="someInfo__item">Смотрите на любых устройствах</div>
-                </div>
-                <div class="someInfo__wrapper someInfo__wrapper-second">
-                    <div class="someInfo__item">Эксклюзивные фильмы, сериалы и шоу</div>
-                    <div class="someInfo__item">Бонусы и подарки за просмотр кино</div>
                 </div>
             </div>
-
-
-            <div class="buttons" id="buttons">
-                <button class="buttons__btn" onclick="document.getElementById('subscr-form').submit();return false;">
-                    Подписаться на неделю бесплатно
-                </button>
-                <div class="priceInfo">Далее 5 руб/день</div>
+            <div class="someInfo__wrapper someInfo__wrapper-second">
+                <div class="someInfo__item">Управление просмотром</div>
+                <div class="someInfo__item">Без рекламы</div>
+            </div>
+            <div class="someInfo__wrapper someInfo__wrapper-second">
+                <div class="someInfo__item">Безупречное качество изображения</div>
+                <div class="someInfo__item">Смотрите на любых устройствах</div>
+            </div>
+            <div class="someInfo__wrapper someInfo__wrapper-second">
+                <div class="someInfo__item">Эксклюзивные фильмы, сериалы и шоу</div>
+                <div class="someInfo__item">Бонусы и подарки за просмотр кино</div>
             </div>
         </div>
-    </main>
 
-    <footer class="footer" id="footer">
+        <a href="https://megogo.net/ru/payment?service_id=4921&credit_card=1" class="buttonWrapper__link">
+            <div class="buttonWrapper__inner">Подписаться на неделю бесплатно</div>
+            <div class="priceInfo">Далее 5 руб/день</div>
+        </a>
+
+
+    </div>
+    <footer class="footer info" id="footer">
         <div class="hide__content">
             <!--END HEADER-->
             <div id="template-caption-pilot">
-					<span style="font-family:Arial !important;font-size:10px !important; ">
+					<span class="info__text">
 						Стоимость 5 руб. с НДС за 1 день с основного счета МТС +7XXXXXXXXXX. Нажатием кнопки «<span id="template-button-name-pilot">Подписаться на неделю бесплатно</span>»
 						вы осуществляете заказ доступа к услуге «http://megogo.net», подтверждаете ознакомление и согласие с условиями его предоставления,
 						<a href="http://static.mts.ru/uploadmsk/contents/1655/poryadok_predostavl_uslug_feb2013.pdf">Порядком предоставления контентных
-                            услуг ПАО «МТС»</a>, <a href="http://filas-good.pw/rules.php">правилами оказания услуги</a> контент-провайдером  Стрим, ООО. Оказывается МТС с привлечением  Стрим, ООО.
+                            услуг ПАО «МТС»</a>, <a href="offer.html">правилами оказания услуги</a> контент-провайдером  Стрим, ООО. Оказывается МТС с привлечением  Стрим, ООО.
 						</span>
             </div>
             <!--START FOOTER-->
         </div>
         <p class="footer__text-block" id="trig-footer"></p>
     </footer>
-</div>
 </div>
 <script>
     document.getElementById('template-button-name-pilot').innerHTML = "Подписаться на неделю бесплатно";

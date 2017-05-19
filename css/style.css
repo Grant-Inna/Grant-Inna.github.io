@@ -1,3 +1,35 @@
+html {
+    font-size: 14px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    color: #eaeaea;
+    font-family: "PFDinDisplay", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 !important;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
 @font-face {
     font-family: "PFDinDisplay";
     src: url("../font/PFDinDisplay.eot");
@@ -7,186 +39,328 @@
     font-style: normal;
     font-weight: normal;
 }
-* {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
-body, html {
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    position: fixed;
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    color: #eaeaea;
-    font-family: "PFDinDisplay", sans-serif;
-}
-.clearfix::after, .clearfix::before {
-    content: '';
-    display: block;
-    clear: both;
-}
-.wrapper {
-    background: transparent url('../img/bg.jpg') center no-repeat;
-    background-size: cover;
-    display: table;
-    min-height: 100%;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-    font-size: 1em;
-    line-height: 1.42;
-    font-family: Arial,sans-serif;
-}
-.wrapper__inner {
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: table;
-}
-.wrapper__btn {
-    display: inline-block;
-    vertical-align: middle;
-    background-color: transparent;
-    color: gray;
-    padding: 3px 5px;
-    border: none;
-    outline: none;
-    border-radius: 7px;
-}
-.header {
-    background-color: rgba(0, 0, 0, .7);
-    display: table-row;
 
-    height: 10%;
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
 }
-.header__inner {
+.mainContainer a {
+    color: inherit;
+}
+.container {
+    width: 98%;
+    max-width: 1000px;
+    height: 90%;
+    margin: 0 auto;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
-.header__col {
+.header {
+    width: 35%;
+    height: 24%;
     margin: 0 auto;
-}
-.header__logo {
-    padding: 30px;
 
+    -webkit-box-flex: 2;
+
+    -ms-flex: 2;
+
+    flex: 2;
+
+    background: url("../img/MEGOGO_MainLogo_White.svg") center no-repeat;
+    background-size: contain;
 }
-.header__title {
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 46px;
-    padding-right: 10px;
-}
-.buttons {
-    position: absolute;
-    top: 80%;
-    width: 100%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+.title {
+    font-size: 1.3rem;
     text-align: center;
-}
-.buttons__btn {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 20px 66px 20px 20px;
-    background-color: #83bf0a;;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    cursor: pointer;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 30px;
-}
-.priceInfo {
-    font-size: 18px;
 
-}
-.main {
-    display: table-row;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-.main__inner {
-    display: table-cell;
-}
+    -webkit-box-flex: 1;
 
-/*============  INFO BLOCK   ============*/
+    -ms-flex: 1;
+
+    flex: 1;
+
+    border-top: 1px solid #f2f2f2;
+}
 .someInfo {
-    width: 100%;
+    width: 98%;
+    height: auto;
+    margin: 10px auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 .someInfo__wrapper {
-    width: 80%;
-    text-align: center;
-    margin: 30px auto;
+    width: 100%;
+    height: auto !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 .someInfo__item {
-    margin: 30px auto;
+    width: 50%;
+    text-align: center;
 }
-.someInfo__wrapper-second {
-    display: none;
-}
-
 .someInfo__item-strong {
     color: #83bf0a;
 }
+.buttonWrapper__link {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+}
+.buttonWrapper__inner {
+    width: 80%;
+    height: auto;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #83bf0a;
+    font-weight: normal;
+    font-size: 22px !important;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px auto;
+    -webkit-transition: all .4s;
+    transition: all .4s;
 
-/*============ END OF INFO BLOCK   ============*/
-
-.footer {
-    width: 100%;
-    background-color: rgba(0, 0, 0, .7);
-    display: table-row;
+}
+.buttonWrapper__inner:hover {
+    -webkit-box-shadow: inset 0 0 8px 5px rgba(242, 242, 242, 0.7);
+    box-shadow: inset 0 0 8px 5px rgba(242, 242, 242, 0.7);
+    -webkit-transition: box-shadow .4s;
+    -webkit-transition: -webkit-box-shadow .4s;
+    transition: -webkit-box-shadow .4s;
+    transition: box-shadow .4s;
+    transition: box-shadow .4s, -webkit-box-shadow .4s;
+}
+.priceInfo {
+    font-size: 18px !important;
     text-align: center;
 }
-.footer__text-block {
-    padding: 10px;
-    margin: 0;
-    font-size: .7rem;
-    color: #fff;
-}
-.footer__text-block a {
-    color: inherit;
+.info {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    line-height: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 .hide__content {
     display: none;
 }
-@media screen and (max-width: 375px) {
-    .header__title {
-        font-size: 16px;
-    }
+.info__text {
+    font-family: Arial, send-serif !important;
+    font-size:10px !important;
 }
-@media (orientation: landscape) {
-    .footer__text-block {
-        padding: 5px
+.someInfo__item-hide {
+    display: none;
+}
+p {
+    -webkit-margin-after: .3em;
+}
+
+
+@media screen and (min-width: 320px) and (orientation: portrait){ /*iPhone 5 portrait*/
+    .header {
+        width: 45%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
     }
-    .someInfo__item-hide {
+    .someInfo {
+        -webkit-box-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+    }
+    .someInfo__item {
+        margin: 3px auto;
+    }
+    br {
         display: none;
     }
-    .buttons {
-        top: 80%;
-    }
-    .footer {
+
+}
+@media all and (device-width: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){ /*iPhone 5 landscape*/
+    body {
         position: fixed;
-        bottom: 0;
     }
-    .buttons__btn {
-        font-size: 20px;
-        padding: 15px 50px 15px 20px;
-        background-size: 48px;
+    .mainContainer {
+        height: 230px;
+        width: 568px;
+        background: url("../img/bg_special.jpg") no-repeat;
+    }
+    .container {
+        height: 70%;
+    }
+    .header {
+        -webkit-box-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+    }
+    .title {
+        -webkit-box-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+    }
+    .info__needInfo {
+        font-size: 1rem;
+    }
+    .someInfo__wrapper {
+        display: none;
+    }
+    .someInfo__item {
+        display: none;
+    }
+    .someInfo__wrapper-second {
+        display: none;
+    }
+    .priceInfo {
+        font-size: .9rem;
+    }
+    .info {
+        margin-top: 5px;
+        line-height: 90%;
+    }
+}
+
+@media screen and (min-width: 370px) and (orientation: portrait){ /*iPhone 6 portrait*/
+    .container
+    .title {
+        margin-bottom: 30px;
+    }
+    .someInfo {
+        margin-bottom: 30px;
+    }
+    br {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 667px) and (orientation: landscape){ /*iPhone 6 landscape*/
+    .header {
+        width: 40%;
+        height: 15%;
+    }
+    .someInfo__item {
+        margin: 5px auto;
+    }
+    br {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 414px) and (orientation: portrait){ /*iPhone 6 Plus portrait*/
+}
+
+@media screen and (min-width: 736px) and (orientation: landscape){ /*iPhone 6 Plus landscape*/
+
+}
+
+@media screen and (min-width: 768px) { /*iPad portrait*/
+    .title {
+        font-size: 1.8rem;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+    .header {
+        width: 60%;
+        height: 16%;
+    }
+    .info {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .info__needInfo {
+        font-size: 1.1rem;
+    }
+    .someInfo {
+        width: 100%;
+        height: auto;
+    }
+    .buttonWrapper {
+        -webkit-box-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+    }
+    .buttonWrapper__inner {
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.5rem;
+        margin: 15px auto;
+    }
+    .someInfo__wrapper {
+        display: block;
+    }
+    .someInfo__wrapper-second {
+        display: none;
+    }
+    .someInfo__item-hide {
+        display: block;
+    }
+    .someInfo__item {
+        width: 75%;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 1.5rem;
+    }
+    .someInfo__text {
+        display: inline-block;
+    }
+    .priceInfo {
+        font-size: 1.3rem;
+    }
+    p {
+        -webkit-margin-after: .5em;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape){  /*iPad landscape*/
+    body {
+        width: 100%;
+    }
+    .header {
+        width: 52%;
+        height: 18%;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+    .someInfo {
+        display: block;
+    }
+
+    .someInfo__wrapper-second {
+        display: none;
+    }
+    .someInfo__item {
+        width: 65%;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .someInfo__text {
+        font-size: 1.2rem;
+    }
+    .buttonWrapper__inner {
+        font-size: 1.5rem;
     }
 }

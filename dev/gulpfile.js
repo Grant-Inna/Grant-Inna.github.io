@@ -20,7 +20,7 @@ gulp.task('minCss', function() {
         .pipe(notify('minCSS Success!'));
 });
 
-gulp.task('watch_scss', function() {
+gulp.task('watch_css', function() {
     gulp.watch('./style.css', ['css'])
 });
 gulp.task('watch_min', function() {
@@ -28,4 +28,4 @@ gulp.task('watch_min', function() {
 });
 
 
-gulp.task('default', ['css', 'minCss', 'watch_min', 'watch_scss']);
+gulp.task('default', ['css', 'minCss', 'watch_min', 'watch_css']);
