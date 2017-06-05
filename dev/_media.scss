@@ -1,7 +1,7 @@
 @media screen and (min-width: 320px) and (orientation: portrait){ /*iPhone 5 portrait*/
   .header {
     width: 45%;
-    flex: .7;
+    flex: .5;
   }
   .someInfo {
     -webkit-box-flex: 3;
@@ -20,9 +20,6 @@
 
   .mainContainer {
     background: url("../img/bg_special.jpg") no-repeat;
-  }
-  .container {
-    height: 70%;
   }
   .header {
     -webkit-box-flex: 2;
@@ -45,6 +42,10 @@
   }
   .someInfo__wrapper-second {
     display: none;
+  }
+  .buttonWrapper__inner {
+    margin-top: 0;
+    margin-bottom: 3px;
   }
   .priceInfo {
     font-size: .9rem;

@@ -213,10 +213,10 @@ p {
   /*iPhone 5 portrait*/
   .header {
     width: 45%;
-    -webkit-box-flex: .7;
-    -webkit-flex: .7;
-        -ms-flex: .7;
-            flex: .7; }
+    -webkit-box-flex: .5;
+    -webkit-flex: .5;
+        -ms-flex: .5;
+            flex: .5; }
   .someInfo {
     -webkit-box-flex: 3;
     -ms-flex: 3;
@@ -231,8 +231,6 @@ p {
   /*iPhone 5 landscape*/
   .mainContainer {
     background: url("../img/bg_special.jpg") no-repeat; }
-  .container {
-    height: 70%; }
   .header {
     -webkit-box-flex: 2;
     -ms-flex: 2;
@@ -251,6 +249,9 @@ p {
     display: none; }
   .someInfo__wrapper-second {
     display: none; }
+  .buttonWrapper__inner {
+    margin-top: 0;
+    margin-bottom: 3px; }
   .priceInfo {
     font-size: .9rem; }
   .info {
