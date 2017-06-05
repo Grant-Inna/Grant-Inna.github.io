@@ -1,0 +1,196 @@
+@import "variables";
+@import "colorsArchive";
+
+
+
+
+html {
+  font-size: 14px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  color: #eaeaea;
+  font-family: "PFDinDisplay", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0 !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+@font-face {
+  font-family: "PFDinDisplay";
+  src: url("../font/PFDinDisplay.eot");
+  src: url("../font/PFDinDisplay.eot?#iefix")format("embedded-opentype"),
+  url("../font/PFDinDisplay.woff") format("woff"),
+  url("../font/PFDinDisplay.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.mainContainer a {
+  color: inherit;
+}
+.container {
+  width: 98%;
+  max-width: 1000px;
+  height: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.header {
+  width: 35%;
+  height: 24%;
+  margin: 0 auto;
+
+  -webkit-box-flex: 2;
+
+  -ms-flex: 2;
+
+  flex: 2;
+
+  background: url("../img/MEGOGO_MainLogo_White.svg") center no-repeat;
+  background-size: contain;
+}
+.title {
+  font-size: 1.3rem;
+  text-align: center;
+
+  -webkit-box-flex: 1;
+
+  -ms-flex: 1;
+
+  flex: 1;
+
+  border-top: 1px solid #f2f2f2;
+}
+.someInfo {
+  width: 98%;
+  height: auto;
+  margin: 10px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.someInfo__wrapper {
+  width: 100%;
+  height: auto !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.someInfo__item {
+  width: 50%;
+  text-align: center;
+}
+.someInfo__item-strong {
+  color: #83bf0a;
+}
+.buttonWrapper__link {
+  -webkit-box-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+}
+.buttonWrapper__inner {
+  width: 80%;
+  height: auto;
+  line-height: 40px;
+  border-radius: 4px;
+  background-color: #83bf0a;
+  font-weight: normal;
+  font-size: 22px !important;
+  color: #ffffff;
+  text-align: center;
+  margin: 10px auto;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+
+}
+.buttonWrapper__inner:hover {
+  -webkit-box-shadow: inset 0 0 8px 5px rgba(242, 242, 242, 0.7);
+  box-shadow: inset 0 0 8px 5px rgba(242, 242, 242, 0.7);
+  -webkit-transition: box-shadow .4s;
+  -webkit-transition: -webkit-box-shadow .4s;
+  transition: -webkit-box-shadow .4s;
+  transition: box-shadow .4s;
+  transition: box-shadow .4s, -webkit-box-shadow .4s;
+}
+.priceInfo {
+  font-size: 18px !important;
+  text-align: center;
+}
+.info {
+  width: 100%;
+  height: 10%;
+  margin-top: 8px;
+  text-align: center;
+  line-height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.hide__content {
+  display: none;
+}
+.info__text {
+  font-family: Arial, send-serif !important;
+  font-size:10px !important;
+}
+.someInfo__item-hide {
+  display: none;
+}
+p {
+  -webkit-margin-after: .3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'media';

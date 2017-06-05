@@ -1,0 +1,27 @@
+html {
+  font-size: 10px; }
+
+html,
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 1rem;
+  color: #eaeaea; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0 !important;
+  font-size: 1rem; }
+
+a {
+  color: inherit; }
+p {
+  -webkit-margin-before: .3em;
+  -webkit-margin-after: .3em;
+}
