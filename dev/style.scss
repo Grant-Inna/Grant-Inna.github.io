@@ -155,6 +155,16 @@ a {
   font-size: 22px !important;
   text-align: center;
 }
+.button__no {
+  margin: 0 auto;
+  display: block;
+  vertical-align: middle;
+  background-color: transparent;
+  color: $colorGreen-Boggy3;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
 .info {
   width: 100%;
   height: $heightFooter;
