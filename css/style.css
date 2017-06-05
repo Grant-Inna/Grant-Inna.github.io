@@ -353,6 +353,7 @@ p {
 /* ============ SPECIAL MEDIA ============ */
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   body {
+    position: fixed;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

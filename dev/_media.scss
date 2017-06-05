@@ -189,6 +189,7 @@ and (orientation : landscape)
 
   body
   {
+    position: fixed;
     display: flex;
 
     align-items: center;
