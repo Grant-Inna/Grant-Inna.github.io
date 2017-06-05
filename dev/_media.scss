@@ -198,6 +198,9 @@ and (orientation : landscape)
     width: 568px;
     height: 230px;
   }
+  .title {
+    flex: 1.4;
+  }
 }
 
 @media only screen
