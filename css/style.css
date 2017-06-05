@@ -260,8 +260,7 @@ p {
 
 @media screen and (min-width: 370px) and (orientation: portrait) {
   /*iPhone 6 portrait*/
-  .container
-.title {
+  .title {
     margin-bottom: 30px; }
   .someInfo {
     margin-bottom: 30px; }
