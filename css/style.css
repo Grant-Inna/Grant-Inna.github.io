@@ -371,10 +371,7 @@ p {
     -webkit-box-flex: 1.4;
     -webkit-flex: 1.4;
         -ms-flex: 1.4;
-            flex: 1.4; }
-  .someInfo {
-    position: absolute;
-    display: none; } }
+            flex: 1.4; } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (width: 667px) and (height: 375px) and (orientation: landscape) and (color: 8) and (device-aspect-ratio: 375 / 667) and (aspect-ratio: 667 / 375) and (device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) {
   /* iPhone 6 ONLY (landscape) */
