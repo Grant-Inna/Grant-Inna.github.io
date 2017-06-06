@@ -183,7 +183,7 @@ a {
   text-align: center; }
 
 .button__no {
-  margin: 0 auto;
+  text-align: center;
   display: block;
   vertical-align: middle;
   background-color: transparent;
