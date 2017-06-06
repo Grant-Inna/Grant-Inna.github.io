@@ -183,6 +183,7 @@ a {
   text-align: center; }
 
 .button__no {
+  font-weight: 600;
   text-align: center;
   display: block;
   vertical-align: middle;
