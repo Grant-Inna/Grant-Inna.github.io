@@ -12,17 +12,8 @@
     <script type="text/javascript">if (top === self) { } else { window.top.location = self.location; }</script>
 </head>
 <body>
-<img src="http://wapclick.mobi/api/pixel.gif" alt="pixel" width="1" height="1" hidden />
-<form method="POST" action="%form_action%" id="frm-btn" style="display:none;">
-    <input type="hidden" name="test" value="п" />
-    %form_footer%
-</form>
-<form method="POST" action="%form_action_fail%" id="frm-cancel" style="display:none;">
-    %form_footer%
-</form>
 
 <div class="mainContainer">
-
     <div class="container">
 
             <header class="header"></header>
@@ -67,7 +58,7 @@
         </div>
 
         <div class="buttonWrapper__link">
-            <div class="buttonWrapper__inner" onclick="document.getElementById('frm-btn').submit(); return false;" id="button">Подписаться на неделю бесплатно</div>
+            <div class="buttonWrapper__inner" onclick="document.getElementById('subscr-form').submit(); return false;" id="button">Подписаться на неделю бесплатно</div>
             <div class="priceInfo">Далее 5 руб/день</div>
             <div class="button__no"><a href="http://megogo.net/ru">ОТМЕНА</a></div>
         </div>
