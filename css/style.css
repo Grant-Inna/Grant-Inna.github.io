@@ -74,7 +74,7 @@ a {
 .mainContainer {
   width: 100%;
   height: 100%;
-  background: url("../img/bg.jpg") no-repeat center;
+  background: url("../img/smallBG3.jpg") center no-repeat;
   background-size: cover; }
 
 .mainContainer a {
@@ -83,7 +83,10 @@ a {
 .container {
   width: 98%;
   max-width: 1000px;
-  height: 88%;
+  height: 80%;
+  /*
+  background-color: rgba($colorGray79RGB, .7);
+  box-shadow: 0 0 10px 5px rgba($colorGray79RGB, .8);*/
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,14 +154,27 @@ a {
   -webkit-box-flex: 4;
   -ms-flex: 4;
   -webkit-flex: 4;
-          flex: 4; }
+          flex: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .buttonWrapper__inner {
   width: 80%;
   height: auto;
   line-height: 40px;
   border-radius: 4px;
-  background-color: #83bf0a;
+  background-color: rgba(159, 220, 15, 0.7);
   font-weight: normal;
   font-size: 22px !important;
   color: #ffffff;
@@ -188,24 +204,25 @@ a {
   display: block;
   vertical-align: middle;
   background-color: transparent;
-  color: #669966;
+  color: #9fe414;
   border: none;
   outline: none;
   border-radius: 7px; }
 
 .info {
   width: 100%;
-  height: 12%;
+  height: 20%;
+  background-color: #272727;
   text-align: center;
   line-height: 85%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .hide__content {
   display: none; }
@@ -219,6 +236,10 @@ a {
 
 p {
   -webkit-margin-after: .3em; }
+
+@media screen and (min-device-width: 300px) and (max-device-width: 740px) and (orientation: landscape) {
+  .mainContainer {
+    background: url("../img/smallLandBG.jpg") top center no-repeat; } }
 
 @media screen and (min-width: 320px) and (orientation: portrait) {
   /*iPhone 5 portrait*/
@@ -243,7 +264,7 @@ p {
 @media all and (device-width: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   /*iPhone 5 landscape*/
   .mainContainer {
-    background: url("../img/bg_special.jpg") no-repeat; }
+    background: url("../img/smallLandBG.jpg") top center no-repeat; }
   .header {
     -webkit-box-flex: 2;
     -ms-flex: 2;
@@ -343,8 +364,31 @@ p {
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   /*iPad landscape*/
+  /* $heightFooter: 20%;
+  $heightContainer: 100% - $heightFooter;*/
   body {
     width: 100%; }
+  .mainContainer {
+    background: url("../img/bigBG2.jpg") 20% no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 60%;
+    margin: 0;
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.3); }
   .header {
     width: 52%;
     height: 18%; }
@@ -361,7 +405,13 @@ p {
   .someInfo__text {
     font-size: 1.2rem; }
   .buttonWrapper__inner {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .button__no {
+    margin-top: 10px; }
+  .info {
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3); } }
 
 /* ============ SPECIAL MEDIA ============ */
 @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {

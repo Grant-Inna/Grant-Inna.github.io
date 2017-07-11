@@ -1,3 +1,12 @@
+@media screen and (min-device-width: 300px) and (max-device-width: 740px) and (orientation: landscape) {
+  .mainContainer {
+    background: url("../img/smallLandBG.jpg") top center no-repeat;
+  }
+}
+
+
+
+
 @media screen and (min-width: 320px) and (orientation: portrait){ /*iPhone 5 portrait*/
   .header {
     width: 45%;
@@ -20,7 +29,7 @@
 @media all and (device-width: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){ /*iPhone 5 landscape*/
 
   .mainContainer {
-    background: url("../img/bg_special.jpg") no-repeat;
+    background: url("../img/smallLandBG.jpg") top center no-repeat;
   }
   .header {
     -webkit-box-flex: 2;
@@ -147,9 +156,26 @@
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape){  /*iPad landscape*/
+ /* $heightFooter: 20%;
+  $heightContainer: 100% - $heightFooter;*/
   body {
     width: 100%;
   }
+  .mainContainer {
+    background: url("../img/bigBG2.jpg") 20% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0;
+    padding: 0 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.3);
+  }
+
   .header {
     width: 52%;
     height: 18%;
@@ -174,6 +200,13 @@
   }
   .buttonWrapper__inner {
     font-size: 1.5rem;
+  }
+  .button__no {
+    margin-top: 10px;
+  }
+  .info {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
   }
 }
 
