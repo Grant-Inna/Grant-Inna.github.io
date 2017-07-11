@@ -236,7 +236,10 @@ a {
   display: none; }
 
 p {
-  -webkit-margin-after: .3em; }
+  -webkit-margin-after: .1em; }
+
+.footer__text-block {
+  margin-top: 2px; }
 
 @media screen and (min-device-width: 300px) and (max-device-width: 740px) and (orientation: landscape) {
   .mainContainer {
@@ -434,7 +437,7 @@ p {
             align-items: center; }
   .mainContainer {
     width: 568px;
-    height: 230px; }
+    height: 232px; }
   .title {
     height: auto; }
   .someInfo {
