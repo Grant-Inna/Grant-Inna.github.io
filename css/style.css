@@ -311,6 +311,10 @@ p {
   br {
     display: block; } }
 
+@media screen and (min-width: 410px) and (orientation: portrait) {
+  .buttonWrapper__inner {
+    line-height: 50px; } }
+
 @media screen and (min-width: 667px) and (orientation: landscape) {
   /*iPhone 6 landscape*/
   .header {
