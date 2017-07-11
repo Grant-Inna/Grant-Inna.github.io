@@ -369,7 +369,7 @@ p {
   body {
     width: 100%; }
   .mainContainer {
-    background: url("../img/bigBG2.jpg") 20% no-repeat;
+    background: url("../img/bigBG2.jpg") 20% top no-repeat;
     background-size: cover;
     display: -webkit-box;
     display: -webkit-flex;
