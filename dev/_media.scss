@@ -2,6 +2,12 @@
   .mainContainer {
     background: url("../img/smallLandBG.jpg") top center no-repeat;
   }
+  .container {
+    height: 74%;
+  }
+  .info {
+    height: 26%;
+  }
 }
 
 
@@ -37,7 +43,10 @@
     flex: 2;
   }
   .title {
-    flex: 1.6;
+    height: auto !important;
+    flex: initial;
+    margin-bottom: 2%;
+
   }
   .info__needInfo {
     font-size: 1rem;
@@ -59,7 +68,7 @@
     font-size: .9rem;
   }
   .info {
-    margin-top: 5px;
+    margin-top: 3px;
     line-height: 90%;
   }
 }
@@ -232,7 +241,7 @@ and (orientation : landscape)
     height: 230px;
   }
   .title {
-    flex: 1.4;
+    height: auto;
   }
   .someInfo {
     height: 1px;
