@@ -1,6 +1,6 @@
 @media screen and (min-device-width: 300px) and (max-device-width: 740px) and (orientation: landscape) {
   .mainContainer {
-    background: url("../img/smallLandBG.jpg") top center no-repeat;
+    background: url("../img/mobLand.jpg") top center no-repeat;
   }
   .container {
     height: 74%;
@@ -30,12 +30,15 @@
   br {
     display: none;
   }
+  .secondTitle br {
+    display: block;
+  }
 
 }
 @media all and (device-width: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){ /*iPhone 5 landscape*/
 
   .mainContainer {
-    background: url("../img/smallLandBG.jpg") top center no-repeat;
+    background: url("../img/mobLand.jpg") top center no-repeat;
   }
   .header {
     -webkit-box-flex: 2;
@@ -43,10 +46,11 @@
     flex: 2;
   }
   .title {
-    height: auto !important;
-    flex: initial;
-    margin-bottom: 2%;
-
+    display: none;
+  }
+  .secondTitle {
+    border-top: 1px solid #f2f2f2;
+    font-size: 1.2rem;
   }
   .info__needInfo {
     font-size: 1rem;
