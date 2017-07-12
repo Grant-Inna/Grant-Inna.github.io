@@ -298,7 +298,7 @@ p {
     display: none; }
   .someInfo__wrapper-second {
     display: none; }
-  buttonWrapper__link {
+  .buttonWrapper__link {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
