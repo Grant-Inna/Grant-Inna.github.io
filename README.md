@@ -4,4 +4,4 @@
 
 [View Mobile version](http://grant-inna.github.io/MEGOGO_Landing-page/header.mobile.html)
 
-[View Index with footer version](http://grant-inna.github.io/MEGOGO_Landing-page/)
+[View Index version with footer](http://grant-inna.github.io/MEGOGO_Landing-page/)
