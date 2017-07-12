@@ -1,6 +1,7 @@
 @media screen and (min-device-width: 300px) and (max-device-width: 740px) and (orientation: landscape) {
   .mainContainer {
     background: url("../img/mobLand.jpg") top center no-repeat;
+    background-size: cover;
   }
   .container {
     height: 74%;
@@ -65,6 +66,7 @@
     display: none;
   }
   .buttonWrapper__inner {
+    width: 70%;
     margin-top: 0;
     margin-bottom: 3px;
   }
@@ -173,27 +175,24 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (orientation: landscape){  /*iPad landscape*/
+@media screen and (min-width: 760px) {  /*iPad landscape*/
  /* $heightFooter: 20%;
   $heightContainer: 100% - $heightFooter;*/
   body {
     width: 100%;
   }
   .mainContainer {
-    background: url("../img/bigBG2.jpg") 20% top no-repeat;
+    background: url("../img/desk.jpg") 20% top no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .container {
     box-sizing: border-box;
-    width: 60%;
-    margin: 0;
     padding: 0 15px;
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.3);
+    height: 88%;
   }
-
   .header {
     width: 52%;
     height: 18%;
@@ -201,8 +200,8 @@
   .title {
     margin-bottom: 20px;
   }
-  .someInfo {
-    display: block;
+  .biggerText {
+    font-size: 1.4rem;
   }
 
   .someInfo__wrapper-second {
@@ -223,6 +222,7 @@
     margin-top: 10px;
   }
   .info {
+    height: 12%;
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
   }
