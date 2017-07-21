@@ -180,7 +180,9 @@ a {
   height: auto;
   line-height: 40px;
   border-radius: 4px;
-  background-color: rgba(159, 220, 15, 0.7);
+  background-color: rgba(183, 255, 14, 0.7);
+  -webkit-box-shadow: 0 0 10px 5px rgba(27, 27, 27, 0.8);
+          box-shadow: 0 0 10px 5px rgba(27, 27, 27, 0.8);
   font-weight: normal;
   font-size: 22px !important;
   color: #ffffff;
@@ -372,8 +374,8 @@ p {
     -webkit-flex: 3;
             flex: 3; }
   .buttonWrapper__inner {
-    height: 50px;
-    line-height: 50px;
+    height: 90px;
+    line-height: 90px;
     font-size: 1.5rem;
     margin: 15px auto; }
   .someInfo__wrapper {
